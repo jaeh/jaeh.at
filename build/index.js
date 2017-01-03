@@ -155,6 +155,10 @@ const watcher =
       )
       .on('ready', () => {
         initDone = true
+
+        if (argv.indexOf('noWatch') > -1) {
+          devWatcher.close()
+        }
       })
   }
 
@@ -179,7 +183,7 @@ const serve =
 const { argv } = process
 
 // actually run the app:
-if (conf.WATCH && argv.indexOf('noWatch') < 0) {
+if (conf.WATCH) {
   watcher()
 }
 
