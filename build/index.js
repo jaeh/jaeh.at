@@ -176,11 +176,13 @@ const serve =
     })
   }
 
+const { argv } = process
+
 // actually run the app:
-if (conf.WATCH) {
+if (conf.WATCH && argv.indexOf('noWatch') < 0) {
   watcher()
 }
 
-if (conf.SERVE) {
+if (conf.SERVE && argv.indexOf('noServe') < 0) {
   serve()
 }
