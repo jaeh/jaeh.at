@@ -1,3 +1,4 @@
+const fs = require('fs')
 const { exec } = require('child_process')
 const path = require('path')
 const stylint = require('stylint')
@@ -49,6 +50,10 @@ if (lintCss) {
 
   filesToLint.forEach(
     dir => {
+      if (!fs.existsSync(dir)) {
+        return
+      }
+
       const cmd = `${ executable } --config ${ configPath } ${ dir }`
 
       console.log('exec :', cmd)
