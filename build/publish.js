@@ -1,23 +1,50 @@
 const { exec } = require('child_process')
+const util = require('util')
 
 const config = require('./config')
 const conf = config()
 
 const log = require('./log')
 
-const origin = conf.GIT_ORIGIN
-const branch = conf.GIT_BRANCH
+const { GIT_ORIGIN, GIT_BRANCH, OUT_DIR } = conf
+
+const outDirArray = OUT_DIR.split('/')
+const outDir = outDirArray[outDirArray.length -1]
 
 // const cmd = `git subtree push --rejoin --squash --prefix public ${ origin } ${ branch }`
-const cmd = `git push ${ origin } \`git subtree split --prefix public ${ branch }\`:${ branch } --force`
+let cmd = `git subtree push --prefix ${ outDir } ${ GIT_ORIGIN } ${ GIT_BRANCH }`
+// if (GIT_BRANCH === 'master') {
+//   cmd = `git push ${ GIT_ORIGIN } \`git subtree split --prefix ${ outDir } ${ GIT_BRANCH }\`:${ GIT_BRANCH } --force`
+// }
 
+log.error('Please review the following command for correctness')
+log.warn(cmd)
+log.error('then simply enter yes and press enter')
+process.stdin.resume()
+process.stdin.setEncoding('utf8')
 
-log('executing:', cmd)
-exec(cmd, (err, res) => {
-  if (err) {
-    log.error(err)
+process.stdin.on('data', (text) => {
+  // console.log('received data:', util.inspect(text))
+  if (text !== 'yes\n') {
+    done()
     return
   }
 
-  log.success('publish succeeded.', res)
+  process.stdin.pause()
+
+  log('exec')
+  exec(cmd, (err, res) => {
+    if (err) {
+      log.error(err)
+      return
+    }
+
+    log.success('publish succeeded.', res)
+  })
 })
+
+const done =
+  () => {
+    log('Process aborted. Exiting.')
+    process.exit()
+  }
