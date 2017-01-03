@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    block title
+      title jaeh.at - Jascha Ehrenreich
+
+    link(rel='icon' href='/favicon.ico')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+
+    link(rel='stylesheet' href='/main.css')
+
+    block meta
+      meta(property='og:title' content='Jascha Ehrenreich - Programmer & Streetartist')
+      meta(property='og:image' content='/img/jascha.ehrenreich.jpg')
+      meta(
+        name='description'
+        property='og:description'
+        content=`
+          i juggle with code since fifteen,
+          with cones, balls and rings since twentyfive,
+          and life juggles with me since around thirtyfive years.
+          i enjoy all of it.
+        `)
+
+    block styles
+
+  body
+    article
+      include /sections/hero.pug
+
+      block content
+
+    block scripts
