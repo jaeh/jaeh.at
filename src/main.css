@@ -1,0 +1,124 @@
+@import 'reset'
+
+underline($color1, $color2)
+  text-shadow 1px 1px 0 $color1, -1px 1px 0 $color1, 2px 0 0 $color1, -2px 0 0 $color1
+  box-shadow inset 0 -1px 0 0 $color1, inset 0 -2px 0 0 $color2
+
+body
+  background-color $background-color
+  border 0
+  color $text-color
+  font-family 'Ubuntu Condensed', 'Segoe UI', roboto, 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-size 20px
+  font-weight 400
+  line-height 23px
+  line-height 2rem
+  margin 0
+  padding 0
+  vertical-align baseline
+  width 100vw
+
+h1,
+h2
+  margin 0 0 .5rem 0
+
+h1
+  font-size 1.5rem
+h2
+  font-size 1.2rem
+
+a
+  color $link-color-dark
+  text-decoration none
+  transition color 500ms, box-shadow 500ms
+  underline($background-color, $link-color-light)
+
+  &:hover
+    color $link-color-light
+    underline($background-color, $link-color-dark)
+
+article
+  display flex
+  flex-direction column
+  justify-content center
+  margin 1rem auto
+  min-height 70vh
+  width 90vw
+
+section.hero
+  align-items center
+  display flex
+  flex-direction column
+  justify-content center
+  margin 0 0 2rem
+  text-align center
+
+  .text
+    display flex
+    flex-direction column
+
+  .image
+    height 40vw
+    margin 0 0 2rem
+    max-height 250px
+    max-width 250px
+    position relative
+    width 40vw
+
+    img
+      border-radius 100%
+      height 100%
+      transition opacity 300ms
+      width 100%
+
+      &:nth-child(2)
+        left 0
+        opacity 0
+        position absolute
+        top 0
+
+    &:hover
+      img
+        &:first-child
+          opacity 0
+        &:nth-child(2)
+          opacity 1
+
+section.contact
+  align-items center
+  display flex
+  flex-direction column
+  font-size .8em
+
+  ul
+    display flex
+    flex-direction column
+
+footer
+  bottom 0
+  left 0
+  position absolute
+  right auto
+  top auto
+  width 100%
+
+  nav
+    display flex
+    justify-content center
+    width 100vw
+
+  ul
+    display flex
+    justify-content space-around
+    max-width 30vw
+    min-width 20rem
+
+@media screen and (orientation: landscape)
+  section.hero
+    flex-direction row
+    text-align left
+
+    .image
+      height 40vh
+      width 40vh
+      margin 0 2vw 0 0

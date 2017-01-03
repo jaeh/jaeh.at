@@ -1,0 +1,32 @@
+extends /page.pug
+
+block content
+  section.contact
+    ul
+      li
+        span= 'email: '
+        a(href='mailto:jascha@jaeh.at')
+          | jascha
+          span.at @
+          | jaeh.at
+      li
+        span= 'github: '
+        a(
+          target='github-jaeh'
+          href='https://github.com/jaeh'
+        ) jaeh
+      li
+        span= 'twitter: '
+        a(
+          target='twitter-weirdpress'
+          href='https://twitter.com/weirdpress'
+        )
+          span.at @
+          | weirdpress
+
+block hero-content
+  .description
+    p i juggle with code since fifteen,
+    p with cones, balls and rings since twentyfive
+    p and life juggles with me since around thirtyfive years.
+    p i enjoy all of it.
