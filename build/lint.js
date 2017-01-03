@@ -43,19 +43,24 @@ if (lintCss) {
 
   const configPath = path.join(conf.BUILD_DIR, '.stylintrc')
   const filesToLint = [
-    path.join(conf.BUNDLE_DIR),
+    path.join(conf.BUNDLE_DIR, '*.css'),
     path.join(conf.INCLUDES_DIR, 'css'),
-  ].join(' ')
+  ]
 
-  const cmd = `${ executable } --config ${ configPath } ${ filesToLint }`
+  filesToLint.forEach(
+    dir => {
+      const cmd = `${ executable } --config ${ configPath } ${ dir }`
 
-  const exe = exec(cmd,
-    (err, stdout, stderr) => {
-      if (err || stderr) {
-        log.error(err || stderr)
-      }
-      console.log({ stdout, stderr })
-      log('stylint results:', stdout)
+      console.log('exec :', cmd)
+
+      const exe = exec(cmd,
+        (err, stdout) => {
+          if (err) {
+            log.error(err)
+          }
+          log('stylint results:', stdout)
+        }
+      )
     }
   )
 }
