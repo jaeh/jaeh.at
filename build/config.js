@@ -15,6 +15,8 @@ defaultConfig.HTML_DIR = path.join(defaultConfig.INCLUDES_DIR, 'html')
 defaultConfig.JS_DIR = path.join(defaultConfig.INCLUDES_DIR, 'js')
 defaultConfig.WATCH = true
 defaultConfig.SERVE = true
+defaultConfig.GIT_ORIGIN = 'origin'
+defaultConfig.GIT_BRANCH = 'gh-pages'
 
 const configPath = path.join(defaultConfig.CWD, 'config.js')
 
