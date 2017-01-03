@@ -1,8 +1,8 @@
 @import 'reset'
 
 underline($color1, $color2)
-  text-shadow 1px 1px 0 $color1, -1px 1px 0 $color1, 2px 0 0 $color1, -2px 0 0 $color1
   box-shadow inset 0 -1px 0 0 $color1, inset 0 -2px 0 0 $color2
+  text-shadow 1px 1px 0 $color1, -1px 1px 0 $color1, 2px 0 0 $color1, -2px 0 0 $color1
 
 body
   background-color $background-color
@@ -11,7 +11,6 @@ body
   font-family 'Ubuntu Condensed', 'Segoe UI', roboto, 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif
   font-size 20px
   font-weight 400
-  line-height 23px
   line-height 2rem
   margin 0
   padding 0
@@ -20,7 +19,7 @@ body
 
 h1,
 h2
-  margin 0 0 .5rem 0
+  margin 0 0 .5rem
 
 h1
   font-size 1.5rem
@@ -120,5 +119,5 @@ footer
 
     .image
       height 40vh
-      width 40vh
       margin 0 2vw 0 0
+      width 40vh
