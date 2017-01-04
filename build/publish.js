@@ -37,5 +37,4 @@ exec(cmd, (err, id, stderr) => {
 
     log.success('publish successfully finished', res)
   })
-
 })
