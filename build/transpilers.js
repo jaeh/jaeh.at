@@ -51,8 +51,6 @@ const TRANSPILE_HTML =
       { basedir: conf.HTML_DIR }
     )
 
-    console.log({ config })
-
     pug.render(buffer, config, (err, html) => {
       if (err) {
         console.error(err)
