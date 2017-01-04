@@ -45,7 +45,15 @@ pug.filters.stylus =
 
 const TRANSPILE_HTML =
   ({ buffer, resolve, reject }) => {
-    pug.render(buffer, { basedir: conf.HTML_DIR }, (err, html) => {
+    const config = Object.assign(
+      {},
+      conf,
+      { basedir: conf.HTML_DIR }
+    )
+
+    console.log({ config })
+
+    pug.render(buffer, config, (err, html) => {
       if (err) {
         console.error(err)
         reject(err)

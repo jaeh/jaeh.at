@@ -12,39 +12,30 @@ const outDirArray = OUT_DIR.split('/')
 const outDir = outDirArray[outDirArray.length -1]
 
 // const cmd = `git subtree push --rejoin --squash --prefix public ${ origin } ${ branch }`
-let cmd = `git subtree push --prefix ${ outDir } ${ GIT_ORIGIN } ${ GIT_BRANCH }`
+// let cmd = `git subtree push --prefix ${ outDir } ${ GIT_ORIGIN } ${ GIT_BRANCH }`
 // if (GIT_BRANCH === 'master') {
 //   cmd = `git push ${ GIT_ORIGIN } \`git subtree split --prefix ${ outDir } ${ GIT_BRANCH }\`:${ GIT_BRANCH } --force`
 // }
+let cmd = `git subtree split --prefix=${ outDir } --onto=${ GIT_ORIGIN }/${ GIT_BRANCH }`
 
-log.error('Please review the following command for correctness')
-log.warn(cmd)
-log.error('then simply enter yes and press enter')
-process.stdin.resume()
-process.stdin.setEncoding('utf8')
-
-process.stdin.on('data', (text) => {
-  // console.log('received data:', util.inspect(text))
-  if (text !== 'yes\n') {
-    done()
+log('exec', cmd)
+exec(cmd, (err, id, stderr) => {
+  if (err) {
+    log.error(err)
     return
   }
 
-  process.stdin.pause()
+  log.success('git subtree split succeeded:', id.trim())
 
-  log('exec')
-  exec(cmd, (err, res) => {
+  let cmd2 = `git push ${ GIT_ORIGIN } ${ id.trim() }:${ GIT_BRANCH } --force`
+
+  exec(cmd2, (err, res) => {
     if (err) {
       log.error(err)
       return
     }
 
-    log.success('publish succeeded.', res)
+    log.success('publish successfully finished', res)
   })
-})
 
-const done =
-  () => {
-    log('Process aborted. Exiting.')
-    process.exit()
-  }
+})
