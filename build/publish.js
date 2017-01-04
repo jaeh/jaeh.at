@@ -27,7 +27,7 @@ exec(cmd, (err, id, stderr) => {
 
   log.success('git subtree split succeeded:', id.trim())
 
-  let cmd2 = `git push ${ GIT_ORIGIN } ${ id.trim() }:${ GIT_BRANCH } --force`
+  let cmd2 = `git push ${ GIT_ORIGIN } ${ id.trim() }:${ GIT_BRANCH }`
 
   exec(cmd2, (err, res) => {
     if (err) {
