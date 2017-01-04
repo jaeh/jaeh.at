@@ -9,9 +9,7 @@ const log =
 
 log.success =
   (...msgs) => {
-    if (ENV === 'development') {
-      console.log('\x1b[32m', ...msgs, '\x1b[0m')
-    }
+    console.log('\x1b[32m', ...msgs, '\x1b[0m')
   }
 
 log.warn =
