@@ -12,17 +12,12 @@ html(lang='en')
     link(rel='stylesheet' href='/main.css')
 
     block meta
-      meta(property='og:title' content='Jascha Ehrenreich - Programmer & Streetartist')
-      meta(property='og:image' content='/img/jascha.ehrenreich.jpg')
+      meta(property='og:title' content=`${ FIRST_NAME } ${ LAST_NAME } - ${ JOB_DESCRIPTION }`)
+      meta(property='og:image' content=`/img/jascha.ehrenreich.jpg`)
       meta(
         name='description'
         property='og:description'
-        content=`
-          i juggle with code since fifteen,
-          with cones, balls and rings since twentyfive,
-          and life juggles with me since around thirtyfive years.
-          i enjoy all of it.
-        `)
+        content=`${ DESCRIPTION.join(' ') }`)
 
     block styles
 

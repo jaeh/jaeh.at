@@ -11,7 +11,8 @@ block content
           | jaeh.at
       li
         span= 'github: '
-        a(target='github-jaeh' href='https://github.com/jaeh') jaeh
+        a(target='github-jaeh' href='https://github.com/jaeh')
+          | jaeh
 
       li
         span= 'keybase: '
@@ -27,7 +28,5 @@ block content
 
 block hero-content
   .description
-    p i juggle with code since fifteen,
-    p with cones, balls and rings since twentyfive
-    p and life juggles with me since around thirtyfive years.
-    p i enjoy all of it.
+    for desc in DESCRIPTION
+      p= desc
