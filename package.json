@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run clean && node build/ build",
-    "build": "NODE_ENV=production node build/ noWatch noServe",
+    "build": "NODE_ENV=production node build/ build noWatch noServe",
     "clean": "rm -rf public",
     "lint:css": "node build/ lint css",
     "lint:html": "node build/ lint html",
