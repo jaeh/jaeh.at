@@ -4,6 +4,7 @@ const browserSync = require('browser-sync')
 const path = require('path')
 
 const log = require('../log')
+const conf = require('../config')()
 
 const mkdirSync =
   (path) => {
@@ -18,8 +19,10 @@ const mkdirSync =
   }
 
 const getFileContent =
-  ({ name, conf }) =>
+  file =>
     new Promise((resolve, reject) => {
+      const { name } = file
+
       fs.readFile(name, (err, buffer) => {
         if (err) {
           reject(err)
@@ -27,15 +30,15 @@ const getFileContent =
         }
 
         const out = name.replace(conf.BUNDLE_DIR, conf.OUT_DIR)
-        resolve({ name, buffer, out, conf })
+        resolve({ name, buffer, out })
       })
     })
     .catch(log.error)
 
 const transpileFile =
-  ({ name, buffer, out, conf }) =>
+  file =>
     new Promise((resolve, reject) => {
-      const file = { name, buffer, out }
+      const { name, buffer, out } = file
       const typeArray = name.split('.')
       const type = typeArray[typeArray.length - 1]
 
@@ -67,8 +70,8 @@ const transpileFile =
 const fileCache = {}
 
 const writeFile =
-  ({ name, buffer, bundle, type, out, conf }) => {
-    const file = { name, buffer, bundle, type, out }
+  file => {
+    const { name, buffer, bundle, out } = file
 
     // no changes, resolve
     if (fileCache[out] && fileCache[out].content === buffer.toString()) {
@@ -103,7 +106,8 @@ const prepareData =
     new Promise(res => res(args))
 
 const handleWatchUpdate =
-  ({ event, name, initDone, devWatcher, conf }) => {
+  ({ event, name, initDone, devWatcher }) => {
+    console.log({ event, name })
     if (name.indexOf(conf.BUNDLE_DIR) < 0) {
       if (initDone) {
         log('stopping watcher', name)
@@ -115,7 +119,7 @@ const handleWatchUpdate =
 
     // gets called on first run of watch dir indexing
     if (event === 'add' || event === 'change') {
-      prepareData({ name, conf })
+      prepareData({ name })
         .then(getFileContent)
         .then(transpileFile)
         .then(writeFile)
@@ -134,7 +138,7 @@ const handleWatchUpdate =
   }
 
 const watcher =
-  ({ conf, resolve, reject }) => {
+  (resolve, reject) => {
     log('Watching', conf.SRC_DIR)
 
     let initDone = false
@@ -166,7 +170,7 @@ const watcher =
   }
 
 const serve =
-  conf => {
+  () => {
     const bsConfig = {
       server: {
         baseDir: conf.OUT_DIR,
@@ -184,13 +188,11 @@ const serve =
   }
 
 const build =
-  (conf) =>
+  () =>
     new Promise((resolve, reject) => {
       // actually run the app:
-      if (conf.WATCH) {
-        console.log('start watching')
-        watcher({ conf, resolve, reject })
-      }
+      console.log('start watching')
+      watcher(resolve, reject)
 
       if (conf.SERVE && !conf.noServe) {
         serve(conf)

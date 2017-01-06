@@ -13,7 +13,7 @@ const publish =
     const cmdPrefix = `--prefix=${ outDir }`
     const cmdOnto = `--onto=${ GIT_ORIGIN }/${ GIT_BRANCH }`
     const cmdArgv = `${ cmdPrefix } ${ cmdOnto }`
-    const cmd = `git subtree merge ${ cmdArgv }`
+    const cmd = `git subtree split ${ cmdArgv }`
 
     log('exec', cmd)
     exec(cmd, (err, id, stderr) => {
