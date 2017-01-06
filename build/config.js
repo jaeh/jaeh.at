@@ -18,7 +18,6 @@ defaultConfig.WATCH = true
 defaultConfig.SERVE = true
 defaultConfig.GIT_ORIGIN = 'origin'
 defaultConfig.GIT_BRANCH = 'gh-pages'
-defaultConfig.GIT_BRANCH_DIR = './.gh-pages'
 
 const { argv } = process
 defaultConfig.noWatch = argv.indexOf('noWatch') > -1
