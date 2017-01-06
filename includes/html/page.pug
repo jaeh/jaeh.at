@@ -17,7 +17,7 @@ html(lang='en')
       meta(
         name='description'
         property='og:description'
-        content=`${ DESCRIPTION.join(' ') }`)
+        content=`${ DESCRIPTION && DESCRIPTION.join(' ') }`)
 
     block styles
 

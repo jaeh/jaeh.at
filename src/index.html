@@ -27,6 +27,7 @@ block content
           | weirdpress
 
 block hero-content
-  .description
-    for desc in DESCRIPTION
-      p= desc
+  if DESCRIPTION
+    .description
+      for desc in DESCRIPTION
+        p= desc
