@@ -1,10 +1,9 @@
 const path = require('path')
 
-const { TRANSPILE_HTML, TRANSPILE_CSS } = require('./build/transpilers')
+const { transpilers } = require('magic-build')
 
 module.exports = {
-  TRANSPILE_HTML,
-  TRANSPILE_CSS,
+  transpilers,
   FIRST_NAME: 'jascha',
   LAST_NAME: 'ehrenreich',
   JOB_DESCRIPTION: 'programmer & streetartist',

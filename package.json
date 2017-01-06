@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run clean && node build/ build",
-    "build": "NODE_ENV=production node build/ build noWatch noServe",
+    "start": "npm run clean && magic-build build",
+    "build": "NODE_ENV=production magic-build build noWatch noServe",
     "clean": "rm -rf public",
-    "lint:css": "node build/ lint css",
-    "lint:html": "node build/ lint html",
-    "publish": "NODE_ENV=production node build/ build zip publish noWatch noServe"
+    "lint:css": "magic-build lint css",
+    "lint:html": "magic-build lint html",
+    "publish": "NODE_ENV=production magic-build build zip publish noWatch noServe"
   },
   "keywords": [],
   "author": "",
