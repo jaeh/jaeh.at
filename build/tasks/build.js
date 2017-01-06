@@ -1,9 +1,9 @@
-const fs = require('fs')
+const fs = require('fs-extra')
 const chokidar = require('chokidar')
 const browserSync = require('browser-sync')
 const path = require('path')
 
-const log = require('./log')
+const log = require('../log')
 
 const mkdirSync =
   (path) => {

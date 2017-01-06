@@ -1,10 +1,10 @@
 const { exec } = require('child_process')
-const util = require('util')
 
-const log = require('./log')
+const conf = require('../config')()
+const log = require('../log')
 
 const publish =
-  conf => {
+  () => {
     const { GIT_ORIGIN, GIT_BRANCH, OUT_DIR } = conf
 
     const outDirArray = OUT_DIR.split('/')

@@ -1,4 +1,4 @@
-const fs = require('fs')
+const fs = require('fs-extra')
 const path = require('path')
 const log = require('./log')
 
@@ -18,11 +18,18 @@ defaultConfig.WATCH = true
 defaultConfig.SERVE = true
 defaultConfig.GIT_ORIGIN = 'origin'
 defaultConfig.GIT_BRANCH = 'gh-pages'
+defaultConfig.GIT_BRANCH_DIR = './.gh-pages'
 
 const { argv } = process
-console.log({ argv })
 defaultConfig.noWatch = argv.indexOf('noWatch') > -1
 defaultConfig.noServe = argv.indexOf('noServe') > -1
+
+defaultConfig.TASKS = {
+  BUILD: argv.indexOf('build') > -1,
+  LINT: argv.indexOf('lint') > -1,
+  PUBLISH: argv.indexOf('publish') > -1,
+  ZIP: argv.indexOf('zip') > -1,
+}
 
 const configPath = path.join(defaultConfig.CWD, 'config.js')
 
@@ -34,12 +41,5 @@ const config =
           require(configPath)
         )
       : defaultConfig
-
-const logAndConfigure =
-  () => {
-    const conf = config()
-    log('config:', conf)
-    return conf
-  }
 
 module.exports = config

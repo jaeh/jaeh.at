@@ -2,9 +2,9 @@ const ENV = process.env.NODE_ENV || 'development'
 
 const log =
   (...msgs) => {
-    if (ENV === 'development') {
-      console.log(...msgs)
-    }
+    // if (ENV === 'development') {
+    console.log(...msgs)
+    // }
   }
 
 log.success =
