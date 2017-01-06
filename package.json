@@ -15,23 +15,7 @@
   "author": "",
   "license": "AGPL-3.0",
   "devDependencies": {
-    "autoprefixer-stylus": "0.11.0",
-    "babel": "6.5.2",
-    "babel-preset-env": "1.1.5",
-    "browser-sync": "2.18.5",
-    "chokidar": "1.6.1",
-    "cssnano": "3.9.1",
-    "html-minifier": "3.2.3",
-    "magic-types": "github:magic/types",
-    "nib": "1.1.2",
-    "node-zopfli": "2.0.2",
-    "pug": "2.0.0-beta6",
-    "pug-lint": "2.3.0",
-    "stylint": "1.5.9",
-    "stylus": "0.54.5"
-  },
-  "stylintignore": [
-    "node_modules/",
-    "public/"
-  ]
+    "magic-build": "github:magic/build",
+    "magic-types": "github:magic/types"
+  }
 }
