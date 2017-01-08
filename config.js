@@ -3,9 +3,9 @@ const path = require('path')
 const { transpilers } = require('magic-build')
 
 module.exports = {
-  transpilers: {
-    html: transpilers.PUG,
-    css: transpilers.STYLUS,
+  TRANSPILERS: {
+    HTML: transpilers.PUG,
+    CSS: transpilers.STYLUS,
   },
   FIRST_NAME: 'jascha',
   LAST_NAME: 'ehrenreich',
