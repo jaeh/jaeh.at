@@ -44,12 +44,15 @@ article
   min-height 70vh
   width 90vw
 
+  section
+    flex-grow 1
+
 section.hero
   align-items center
   display flex
   flex-direction column
   justify-content center
-  margin 0 0 2rem
+  margin 0 0 .5rem
   text-align center
 
   .text
@@ -57,12 +60,12 @@ section.hero
     flex-direction column
 
   .image
-    height 40vw
+    height 50vw
     margin 0 0 2rem
-    max-height 250px
-    max-width 250px
+    max-height 210px
+    max-width 210px
     position relative
-    width 40vw
+    width 50vw
 
     img
       border-radius 100%
@@ -84,12 +87,13 @@ section.hero
           opacity 1
 
 section.contact
-  align-items center
   display flex
   flex-direction column
   font-size .8em
+  justify-content flex-end
 
   ul
+    align-items center
     display flex
     flex-direction column
 
@@ -112,12 +116,26 @@ footer
     max-width 30vw
     min-width 20rem
 
-@media screen and (orientation: landscape)
-  section.hero
-    flex-direction row
-    text-align left
+@media screen
+  @media (orientation: landscape), (min-width: 600px)
+    section.hero
+      flex-direction row
+      text-align left
 
-    .image
-      height 40vh
-      margin 0 2vw 0 0
-      width 40vh
+      .image
+        height 50vh
+        margin 0 2vw 0 0
+        width 50vh
+
+    section.contact
+      ul
+        align-self center
+        display flex
+        flex-direction row
+        flex-wrap wrap
+        justify-content center
+        list-style none
+        max-width 60vw
+
+        li
+          width 49%
