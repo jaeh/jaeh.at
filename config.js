@@ -6,6 +6,7 @@ module.exports = {
   TRANSPILERS: {
     HTML: transpilers.PUG,
     CSS: transpilers.STYLUS,
+    JS: transpilers.BROWSERIFY,
   },
   FIRST_NAME: 'jascha',
   LAST_NAME: 'ehrenreich',
