@@ -49,8 +49,8 @@ article
   flex-direction column
   justify-content center
   margin 1rem auto
-  min-height 70vh
   max-width 600px
+  min-height 70vh
   width 100%
 
   section
@@ -79,11 +79,10 @@ section
 
       img
         border-radius 10%
+        box-shadow 1px 1px 20px black
         height 100%
-        -webkit-transition opacity .3s
         transition opacity .3s
         width 100%
-        box-shadow 1px 1px 20px black
 
         &:nth-child(2)
           left 0
@@ -106,17 +105,17 @@ section
     justify-content flex-end
 
     h2
-      text-align center
       font-size 1.5rem
       margin 1rem 0 .2rem
+      text-align center
 
     ul
       align-items center
       display flex
       flex-direction column
-      width 100vw
-      max-width 90%
       margin 0 auto
+      max-width 90%
+      width 100vw
 
 footer
   bottom 0
@@ -156,6 +155,3 @@ footer
           flex-direction row
           flex-wrap wrap
           justify-content space-between
-
-          lh
-            width 100%
