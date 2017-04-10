@@ -23,7 +23,17 @@ html(lang='en')
 
   body
     article
-      include /sections/hero.pug
+      section.hero
+        .image
+          img.face(src=`/img/${ FIRST_NAME }.${ LAST_NAME }.jpg` role='presentation')
+          img.body(src=`/img/${ FIRST_NAME }.${ LAST_NAME }.body.jpg` role='presentation')
+
+        .text
+          h1=`${ FIRST_NAME} ${ LAST_NAME }`
+
+          h2=JOB_DESCRIPTION
+
+          block hero-content
 
       block content
 

@@ -3,12 +3,16 @@ extends /page.pug
 block content
   section.contact
     ul
+      lh
+        h2 communications
+
       li
         span= 'email: '
         a(href='mailto:jascha@jaeh.at')
           | jascha
           span.at @
           | jaeh.at
+
       li
         span= 'github: '
         a(target='github-jaeh' href='https://github.com/jaeh')
@@ -25,6 +29,21 @@ block content
         a(target='twitter-weirdpress' href='https://twitter.com/weirdpress')
           span.at @
           | weirdpress
+
+  section.groups
+    ul
+      lh
+        h2 congregations
+
+      li
+        a(target='metalab' href='https://metalab.at') hacking @ metalab
+
+      li
+        a(target='bwb' href='https://bwb.is') bitcoiner without borders
+
+      li
+        a(target='wizardsatwork' href='https://wizardsatwork.at') wizard at work
+
 
 block hero-content
   if DESCRIPTION
