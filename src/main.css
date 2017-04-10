@@ -50,7 +50,8 @@ article
   justify-content center
   margin 1rem auto
   min-height 70vh
-  width 90vw
+  max-width 600px
+  width 100%
 
   section
     flex-grow 1
@@ -113,9 +114,8 @@ section
       align-items center
       display flex
       flex-direction column
-
-      lh
-        width 100%
+      width 100vw
+      max-width 90%
 
 footer
   bottom 0
