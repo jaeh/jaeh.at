@@ -23,6 +23,7 @@ body
   position absolute
   vertical-align baseline
   width 100%
+  overflow-y scroll
 
 h2,
 h3
