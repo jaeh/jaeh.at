@@ -22,19 +22,28 @@ html(lang='en')
     block styles
 
   body
-    article
+    main
       section.hero
-        .image
-          img.face(src=`/img/${ FIRST_NAME }.${ LAST_NAME }.jpg` role='presentation')
-          img.body(src=`/img/${ FIRST_NAME }.${ LAST_NAME }.body.jpg` role='presentation')
+        a.image(href='/')
+          img.face(alt='home' src=`/img/${ FIRST_NAME }.${ LAST_NAME }.jpg`)
+          img.body(alt='home' src=`/img/${ FIRST_NAME }.${ LAST_NAME }.body.jpg`)
 
         .text
-          h1=`${ FIRST_NAME} ${ LAST_NAME }`
+          h2=`${ FIRST_NAME} ${ LAST_NAME }`
 
-          h2=JOB_DESCRIPTION
+          h3=JOB_DESCRIPTION
 
           block hero-content
+            if DESCRIPTION
+              .description
+                for desc in DESCRIPTION
+                  p= desc
 
       block content
+
+      footer
+        div
+          span.anarchy= 'Ⓐ '
+          span 1982 - #{ year } & all rites reversed
 
     block scripts

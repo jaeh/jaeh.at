@@ -2,7 +2,7 @@ extends /page.pug
 
 block content
   section.contact
-    h2 communications
+    h3 communications
     ul
       li
         span= 'email: '
@@ -29,7 +29,7 @@ block content
           | weirdpress
 
   section.groups
-    h2 congregations
+    h3 congregations
     ul
       li
         a(target='metalab' href='https://metalab.at') hacking @ metalab
@@ -41,8 +41,8 @@ block content
         a(target='wizardsatwork' href='https://wizardsatwork.at') wizard at work
 
 
-block hero-content
-  if DESCRIPTION
-    .description
-      for desc in DESCRIPTION
-        p= desc
+  section.unlicense
+    h3 licenses
+    div
+      span= 'If there is no license attached to code i wrote, then i consider it to be '
+      a(href='/unlicense') free and unlicensed

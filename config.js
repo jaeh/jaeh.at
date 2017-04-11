@@ -2,6 +2,8 @@ const path = require('path')
 
 const { transpilers } = require('magic-build')
 
+const year = new Date().getFullYear()
+
 module.exports = {
   TRANSPILERS: {
     HTML: transpilers.PUG,
@@ -17,4 +19,5 @@ module.exports = {
     'and life juggles with me since around thirtyfive years.',
     'i enjoy all of it.',
   ],
+  year,
 }

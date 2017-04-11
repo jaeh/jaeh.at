@@ -16,19 +16,21 @@ body
   font-family 'Ubuntu Condensed', 'Segoe UI', roboto, 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif
   font-size 20px
   font-weight 400
+  height 100%
   line-height 2rem
   margin 0
   padding 0
+  position absolute
   vertical-align baseline
-  width 100vw
+  width 100%
 
-h1,
-h2
+h2,
+h3
   margin 0 0 .5rem
 
-h1
-  font-size 1.5rem
 h2
+  font-size 1.5rem
+h3
   font-size 1.2rem
 
 a
@@ -44,13 +46,13 @@ a
 ul
   list-style none
 
-article
+main
   display flex
   flex-direction column
   justify-content center
   margin 1rem auto
   max-width 600px
-  min-height 70vh
+  min-height 95vh
   width 100%
 
   section
@@ -70,6 +72,8 @@ section
       flex-direction column
 
     .image
+      border-radius 10%
+      box-shadow 0 0 20px black
       height 50vw
       margin 0 0 2rem
       max-height 210px
@@ -79,7 +83,6 @@ section
 
       img
         border-radius 10%
-        box-shadow 1px 1px 20px black
         height 100%
         transition opacity .3s
         width 100%
@@ -98,14 +101,14 @@ section
             opacity 1
 
   &.contact,
-  &.groups
+  &.groups,
+  &.unlicense
     display flex
     flex-direction column
     font-size .8em
     justify-content flex-end
 
-    h2
-      font-size 1.5rem
+    h3
       margin 1rem 0 .2rem
       text-align center
 
@@ -117,23 +120,26 @@ section
       max-width 90%
       width 100vw
 
+
+  &.unlicense
+    margin 1rem 0 0
+
+    div
+      text-align center
+
+    p
+      margin 0 0 1rem
+
+
 footer
-  bottom 0
-  left 0
-  position absolute
-  right auto
-  top auto
-  width 100%
+  display flex
+  justify-content center
+  flex-direction row
+  margin 1rem 0 0
 
-  nav
-    display flex
-    justify-content center
-    width 100vw
-
-  ul
-    display flex
-    justify-content space-around
-    min-width 20rem
+  .anarchy
+    font-weight 800
+    font-size 1.1em
 
 @media screen
   @media (orientation: landscape), (min-width: 600px)
