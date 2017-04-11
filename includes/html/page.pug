@@ -4,7 +4,7 @@ html(lang='en')
     meta(charset='utf-8')
 
     block title
-      title jaeh.at - Jascha Ehrenreich
+      title jaeh.at - #{ FIRST_NAME } #{ LAST_NAME }
 
     link(rel='icon' href='/favicon.ico')
     meta(name='viewport' content='width=device-width, initial-scale=1')
@@ -13,11 +13,11 @@ html(lang='en')
 
     block meta
       meta(property='og:title' content=`${ FIRST_NAME } ${ LAST_NAME } - ${ JOB_DESCRIPTION }`)
-      meta(property='og:image' content=`/img/jascha.ehrenreich.jpg`)
+      meta(property='og:image' content=`/img/${ FIRST_NAME }.${ LAST_NAME }.jpg`)
       meta(
         name='description'
         property='og:description'
-        content=`${ DESCRIPTION && DESCRIPTION.join(' ') }`)
+        content= DESCRIPTION.join(' '))
 
     block styles
 
