@@ -60,6 +60,11 @@ main
     flex-grow 1
 
 section
+  display flex
+  flex-direction column
+  font-size .8em
+  justify-content flex-end
+
   &.hero
     align-items center
     display flex
@@ -67,6 +72,11 @@ section
     justify-content center
     margin 0 0 .5rem
     text-align center
+
+    h2,
+    h3
+      text-align left
+      margin 0
 
     .text
       display flex
@@ -101,36 +111,27 @@ section
           &:nth-child(2)
             opacity 1
 
-  &.contact,
-  &.groups,
-  &.unlicense
-    display flex
-    flex-direction column
-    font-size .8em
-    justify-content flex-end
+  h3
+    margin 1rem 0 .2rem
+    text-align center
 
-    h3
-      margin 1rem 0 .2rem
+  ul
+    margin 0 auto
+    max-width 90%
+    width 100vw
+
+    li
+      float left
+      width 33%
       text-align center
 
+  &.unlicense
+    text-align center
+
+  &.communications
     ul
-      align-items center
-      display flex
-      flex-direction column
-      margin 0 auto
-      max-width 90%
-      width 100vw
-
-
-  &.unlicense
-    margin 1rem 0 0
-
-    div
-      text-align center
-
-    p
-      margin 0 0 1rem
-
+      li
+        width 25%
 
 footer
   display flex
@@ -154,11 +155,9 @@ footer
           margin 0 3vw 0 0
           width 50vh
 
-      &.contact,
-      &.groups
-        ul
-          align-self center
-          display flex
-          flex-direction row
-          flex-wrap wrap
-          justify-content space-between
+      ul
+        align-self center
+        display flex
+        flex-direction row
+        flex-wrap wrap
+        justify-content space-between
