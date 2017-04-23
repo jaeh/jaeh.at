@@ -95,6 +95,7 @@ header.main
 article
   clear both
   display inline-block
+  min-height 40vh
 
 section
   clear both
@@ -147,13 +148,8 @@ footer
           &.unlicense
             max-width 100%
 
-
       footer
-        bottom 0
-        left 0
-        position absolute
-        right 0
-        top auto
+        margin 5em 0
 
   @media (min-width: 800px)
     body
