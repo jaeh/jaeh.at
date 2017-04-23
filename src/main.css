@@ -49,9 +49,9 @@ ul
   list-style none
 
 main
-  margin 8vw
+  margin 8vw 8vw 0
+  max-width 90%
   min-height 95vh
-  width 90%
 
 header.main
   display inline-block
@@ -143,6 +143,14 @@ footer
         &.projects
           clear both
 
+
+      footer
+        bottom 0
+        left 0
+        position absolute
+        right 0
+        top auto
+
   @media (min-width: 800px)
     body
       section
@@ -156,7 +164,7 @@ footer
         &.unlicense
           clear both
 
-  @media (min-width: 1200px)
+  @media (min-width: 900px)
     body
       section
         &.communications,
@@ -165,11 +173,5 @@ footer
         &.unlicense
           clear none
           margin 0 2em 0 0
+          max-width 25%
           width auto
-
-      footer
-        bottom 0
-        left 0
-        position absolute
-        right 0
-        top auto
