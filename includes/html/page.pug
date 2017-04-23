@@ -32,8 +32,8 @@ html(lang='en')
 
   body(id='♥')
     main
-      section.hero
-        a.image(href='/')
+      header.main
+        .header__image
           img.face(
             alt='home'
             src=`/img/${ FIRST_NAME }.${ LAST_NAME }.jpg`
@@ -44,7 +44,8 @@ html(lang='en')
           )
 
         .text
-          h2 #{ FIRST_NAME} #{ LAST_NAME }
+          a(href='/')
+            h2 #{ FIRST_NAME} #{ LAST_NAME }
 
           h3 #{ JOB_DESCRIPTION }
 
@@ -54,11 +55,15 @@ html(lang='en')
                 for desc in DESCRIPTION
                   p= desc
 
-      block content
+      article
+        block content
 
       footer
-        div
-          span.anarchy= 'Ⓐ '
-          span 1982 - #{ year } & all rites reversed
+        a.anarchy(
+          title='Lick here, you might be one of the lucky 23.'
+          href='http://principiadiscordia.com'
+          target='allhaileris'
+        )= 'Ⓐ '
+        span 1982 - #{ year } all rites reversed
 
     block scripts
