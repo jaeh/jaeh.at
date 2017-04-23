@@ -143,6 +143,10 @@ footer
         &.projects
           clear both
 
+        &.page
+          &.unlicense
+            max-width 100%
+
 
       footer
         bottom 0
