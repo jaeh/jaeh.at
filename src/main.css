@@ -109,6 +109,9 @@ section
       display inline-block
       line-height 1.1
 
+    &.page
+      max-width 100%
+
 footer
   clear both
   font-size .7em
