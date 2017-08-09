@@ -144,9 +144,8 @@ footer
         &.projects
           clear both
 
-        &.page
-          &.unlicense
-            max-width 100%
+        &.unlicense
+          max-width 100%
 
       footer
         margin 5em 0
