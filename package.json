@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npm run clean && magic-build build",
     "build": "NODE_ENV=production magic-build build noWatch noServe",
+    "build:serve": "NODE_ENV=production magic-build build noWatch",
     "clean": "rm -rf public",
     "lint:css": "magic-build lint css",
     "lint:html": "magic-build lint html",
