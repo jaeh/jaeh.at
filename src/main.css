@@ -48,12 +48,13 @@ a
 ul
   list-style none
 
-main
+#main
   margin 8vw 8vw 0
-  max-width 90%
+  max-width 900px
+  width 90%
   min-height 95vh
 
-header.main
+.header.main
   display inline-block
   margin 0 0 .5em
   width 100%
@@ -92,12 +93,12 @@ header.main
       &:nth-child(2)
         opacity 1
 
-article
+.article
   clear both
   display inline-block
   min-height 40vh
 
-section
+.section
   clear both
   margin 0 0 1em
 
@@ -112,7 +113,7 @@ section
     &.page
       max-width 100%
 
-footer
+.footer
   clear both
   font-size .7em
   margin 1em 0 0
@@ -138,7 +139,7 @@ footer
         margin 0 2em 3em 0
         width 29vw
 
-      section
+      .section
         clear none
         display inline-block
         float left
@@ -150,12 +151,12 @@ footer
         &.unlicense
           max-width 100%
 
-      footer
+      .footer
         margin 5em 0
 
   @media (min-width: 800px)
     body
-      section
+      .section
         clear none
 
         &.communications,
@@ -168,7 +169,7 @@ footer
 
   @media (min-width: 900px)
     body
-      section
+      .section
         &.communications,
         &.congregations,
         &.projects

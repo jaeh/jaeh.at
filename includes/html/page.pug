@@ -31,9 +31,9 @@ html(lang='en')
     block styles
 
   body(id='♥')
-    main
-      header.main
-        .header__image
+    div#main
+      div.header.main
+        div.header__image
           img.face(
             alt='home'
             src=`/img/${ FIRST_NAME }.${ LAST_NAME }.jpg`
@@ -43,9 +43,9 @@ html(lang='en')
             src=`/img/${ FIRST_NAME }.${ LAST_NAME }.body.jpg`
           )
 
-        .text
-          a(href='/')
-            h2 #{ FIRST_NAME} #{ LAST_NAME }
+        div.text
+          h2
+            a(href='/') #{ FIRST_NAME} #{ LAST_NAME }
 
           h3 #{ JOB_DESCRIPTION }
 
@@ -55,10 +55,10 @@ html(lang='en')
                 for desc in DESCRIPTION
                   p= desc
 
-      article
+      div.article
         block content
 
-      footer
+      div.footer
         a.anarchy(
           title='Lick here, you might be one of the lucky 23.'
           href='http://principiadiscordia.com'
