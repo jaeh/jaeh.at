@@ -16,7 +16,6 @@
   "author": "",
   "license": "AGPL-3.0",
   "devDependencies": {
-    "magic-build": "github:magic/build",
-    "magic-types": "github:magic/types"
+    "magic-build": "github:magic/build"
   }
 }
