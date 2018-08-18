@@ -4,18 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run clean && magic-build build",
-    "build": "NODE_ENV=production magic-build build noWatch noServe zip",
-    "build:serve": "NODE_ENV=production magic-build build noWatch zip",
+    "start": "npm run clean && magic-stasis build",
+    "build": "NODE_ENV=production magic-stasis build noWatch noServe zip",
+    "build:serve": "NODE_ENV=production magic-stasis build noWatch zip",
     "clean": "rm -rf public",
-    "lint:css": "magic-build lint css",
-    "lint:html": "magic-build lint html",
-    "publish": "NODE_ENV=production magic-build build zip publish noWatch noServe"
+    "lint:css": "magic-stasis lint css",
+    "lint:html": "magic-stasis lint html",
+    "publish": "NODE_ENV=production magic-stasis build zip publish noWatch noServe"
   },
   "keywords": [],
   "author": "",
   "license": "AGPL-3.0",
   "devDependencies": {
-    "magic-build": "github:magic/build"
+    "@magic/stasis": "github:magic/stasis"
   }
 }

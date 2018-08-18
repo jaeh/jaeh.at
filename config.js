@@ -1,6 +1,6 @@
 const path = require('path')
 
-const { transpilers } = require('magic-build')
+const { transpilers } = require('@magic/stasis')
 
 const year = new Date().getFullYear()
 
