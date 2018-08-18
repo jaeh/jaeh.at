@@ -4,7 +4,7 @@ html(lang='en')
     meta(charset='utf-8')
 
     block title
-      title jaeh.at - #{ FIRST_NAME } #{ LAST_NAME }
+      title= `jaeh.at - ${ FIRST_NAME } ${ LAST_NAME }`
 
     link(rel='icon' href='/favicon.ico')
     meta(name='viewport' content='width=device-width, initial-scale=1')
@@ -31,9 +31,9 @@ html(lang='en')
     block styles
 
   body(id='♥')
-    div#main
-      div.header.main
-        div.header__image
+    #main
+      .header.main
+        .header__image
           img.face(
             alt='home'
             src=`/img/${ FIRST_NAME }.${ LAST_NAME }.jpg`
@@ -43,11 +43,11 @@ html(lang='en')
             src=`/img/${ FIRST_NAME }.${ LAST_NAME }.body.jpg`
           )
 
-        div.text
+        .text
           h2
-            a(href='/') #{ FIRST_NAME} #{ LAST_NAME }
+            a(href='/')= `${ FIRST_NAME} ${ LAST_NAME }`
 
-          h3 #{ JOB_DESCRIPTION }
+          h3= `${ JOB_DESCRIPTION }`
 
           block hero-content
             if DESCRIPTION
@@ -55,15 +55,15 @@ html(lang='en')
                 for desc in DESCRIPTION
                   p= desc
 
-      div.article
+      .article
         block content
 
-      div.footer
+      .footer
         a.anarchy(
           title='Lick here, you might be one of the lucky 23.'
           href='http://principiadiscordia.com'
-          target='allhaileris'
-        )= 'Ⓐ '
-        span 1982 - #{ year } all rites reversed
+          target='allhaileris')= 'Ⓐ '
+
+        span= `1982 - ${ year } all rites reversed`
 
     block scripts
