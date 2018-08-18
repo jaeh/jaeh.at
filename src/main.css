@@ -22,7 +22,6 @@ body
   overflow-y scroll
   padding 0
   position absolute
-  text-align center
   vertical-align baseline
   width 100%
 
@@ -49,10 +48,10 @@ ul
   list-style none
 
 #main
-  margin 8vw 8vw 0
+  margin 8vw auto 0
   max-width 900px
-  width 90%
   min-height 95vh
+  width 90%
 
 .header.main
   display inline-block
@@ -68,7 +67,7 @@ ul
   box-shadow 0 0 2em black
   display block
   height 39vw
-  margin 0 auto 1.5em
+  margin 0 0 1.5em
   max-height 210px
   max-width 210px
   position relative
@@ -129,7 +128,7 @@ ul
     text-shadow none
 
 @media screen
-  @media (min-width: 500px)
+  @media (min-width: 700px)
     body
       text-align left
 
@@ -153,19 +152,6 @@ ul
 
       .footer
         margin 5em 0
-
-  @media (min-width: 800px)
-    body
-      .section
-        clear none
-
-        &.communications,
-        &.congregations,
-        &.projects
-          clear none
-          width 33%
-        &.unlicense
-          clear both
 
   @media (min-width: 900px)
     body
