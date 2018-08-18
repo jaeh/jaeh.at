@@ -3,17 +3,17 @@ html, h1, h2, h3, div, p, span, img, ul, li, .article, .section, .header, .foote
 a { background: transparent; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline;}
 ::-moz-selection { background-color: #dedede; color: #010101; text-shadow: none;}
 ::selection { background-color: #dedede; color: #010101; text-shadow: none;}
-body { background-color: #010101; border: 0; color: #dedede; font-family: 'Ubuntu Condensed', 'Segoe UI', roboto, 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 400; height: 100%; line-height: 2em; margin: 0; overflow-y: scroll; padding: 0; position: absolute; text-align: center; vertical-align: baseline; width: 100%;}
+body { background-color: #010101; border: 0; color: #dedede; font-family: 'Ubuntu Condensed', 'Segoe UI', roboto, 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 400; height: 100%; line-height: 2em; margin: 0; overflow-y: scroll; padding: 0; position: absolute; vertical-align: baseline; width: 100%;}
 h2, h3 { margin: 0 0 0.5em;}
 h2 { font-size: 1.5em;}
 h3 { font-size: 1.2em;}
 a { color: #ef6c00; text-decoration: none; -webkit-transition: color 500ms, -webkit-box-shadow 500ms; transition: color 500ms, -webkit-box-shadow 500ms; transition: color 500ms, box-shadow 500ms; transition: color 500ms, box-shadow 500ms, -webkit-box-shadow 500ms; -webkit-box-shadow: inset 0 -1px 0 0 #010101, inset 0 -2px 0 0 #fb8c00; box-shadow: inset 0 -1px 0 0 #010101, inset 0 -2px 0 0 #fb8c00; text-shadow: 1px 1px 0 #010101, -1px 1px 0 #010101, 2px 0 0 #010101, -2px 0 0 #010101;}
 a:hover { color: #fb8c00; -webkit-box-shadow: inset 0 -1px 0 0 #010101, inset 0 -2px 0 0 #ef6c00; box-shadow: inset 0 -1px 0 0 #010101, inset 0 -2px 0 0 #ef6c00; text-shadow: 1px 1px 0 #010101, -1px 1px 0 #010101, 2px 0 0 #010101, -2px 0 0 #010101;}
 ul { list-style: none;}
-#main { margin: 8vw 8vw 0; max-width: 900px; width: 90%; min-height: 95vh;}
+#main { margin: 8vw auto 0; max-width: 900px; min-height: 95vh; width: 90%;}
 .header.main { display: inline-block; margin: 0 0 0.5em; width: 100%;}
 .header.main h2, .header.main h3 { margin: 0;}
-.header__image { border-radius: 10%; -webkit-box-shadow: 0 0 2em #000; box-shadow: 0 0 2em #000; display: block; height: 39vw; margin: 0 auto 1.5em; max-height: 210px; max-width: 210px; position: relative; width: 39vw;}
+.header__image { border-radius: 10%; -webkit-box-shadow: 0 0 2em #000; box-shadow: 0 0 2em #000; display: block; height: 39vw; margin: 0 0 1.5em; max-height: 210px; max-width: 210px; position: relative; width: 39vw;}
 .header__image img { border-radius: 10%; height: 100%; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; width: 100%;}
 .header__image img:nth-child(2) { left: 0; opacity: 0; position: absolute; top: 0;}
 .header__image:hover img:first-child { opacity: 0;}
@@ -25,7 +25,6 @@ ul { list-style: none;}
 .section.unlicense.page { max-width: 100%;}
 .footer { clear: both; font-size: 0.7em; margin: 1em 0 0; text-align: center; width: 100%;}
 .footer .anarchy { -webkit-box-shadow: none; box-shadow: none; color: #dedede; font-size: 1.1em; font-weight: 800; text-decoration: none; text-shadow: none;}
-@media screen and (min-width: 500px) { body { text-align: left; } body .header__image { float: left; height: 29vw; margin: 0 2em 3em 0; width: 29vw; } body .section { clear: none; display: inline-block; float: left; width: 50%; } body .section.projects { clear: both; } body .section.unlicense { max-width: 100%; } body .footer { margin: 5em 0; }}
-@media screen and (min-width: 800px) { body .section { clear: none; } body .section.communications, body .section.congregations, body .section.projects { clear: none; width: 33%; } body .section.unlicense { clear: both; }}
+@media screen and (min-width: 700px) { body { text-align: left; } body .header__image { float: left; height: 29vw; margin: 0 2em 3em 0; width: 29vw; } body .section { clear: none; display: inline-block; float: left; width: 50%; } body .section.projects { clear: both; } body .section.unlicense { max-width: 100%; } body .footer { margin: 5em 0; }}
 @media screen and (min-width: 900px) { body .section.communications, body .section.congregations, body .section.projects, body .section.unlicense { clear: none; margin: 0 2em 0 0; max-width: 25%; width: auto; }}
 /*# sourceMappingURL=stylus.css.map */
