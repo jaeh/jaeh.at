@@ -1,14 +1,14 @@
 const path = require('path')
 
-const { transpilers } = require('@magic/stasis')
+const HTML = require('@mspg/transpile-pug')
+const CSS = require('@mspg/transpile-stylus')
 
 const year = new Date().getFullYear()
 
 module.exports = {
   TRANSPILERS: {
-    HTML: transpilers.PUG,
-    CSS: transpilers.STYLUS,
-    JS: transpilers.BROWSERIFY,
+    HTML,
+    CSS,
   },
   FIRST_NAME: 'jascha',
   LAST_NAME: 'ehrenreich',
@@ -20,4 +20,5 @@ module.exports = {
     'i enjoy all of it.',
   ],
   year,
+  IGNORE_EXTENSIONS: ['ai', 'psd', 'xcf'],
 }

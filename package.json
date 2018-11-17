@@ -1,21 +1,22 @@
 {
   "name": "jaeh.github.io",
-  "version": "0.0.1",
+  "version": "0.23.5",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run clean && magic-stasis build",
-    "build": "NODE_ENV=production magic-stasis build noWatch noServe zip",
-    "build:serve": "NODE_ENV=production magic-stasis build noWatch zip",
-    "clean": "rm -rf public",
-    "lint:css": "magic-stasis lint css",
-    "lint:html": "magic-stasis lint html",
-    "publish": "NODE_ENV=production magic-stasis build zip publish noWatch noServe"
+    "start": "mspg build serve watch",
+    "build": "NODE_ENV=production mspg clean build zip",
+    "build:serve": "NODE_ENV=production mspg build serve zip",
+    "lint:css": "mspg lint css",
+    "lint:html": "mspg lint html",
+    "publish": "NODE_ENV=production mspg build zip publish"
   },
   "keywords": [],
   "author": "",
   "license": "AGPL-3.0",
   "devDependencies": {
-    "@magic/stasis": "github:magic/stasis"
+    "@mspg/core": "github:mspg/core",
+    "@mspg/transpile-pug": "github:mspg/transpile-pug",
+    "@mspg/transpile-stylus": "github:mspg/transpile-stylus"
   }
 }
