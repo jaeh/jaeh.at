@@ -14,7 +14,7 @@ body
   border 0
   color $text-color
   font-family 'Ubuntu Condensed', 'Segoe UI', roboto, 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif
-  font-size 15px
+  font-size 18px
   font-weight 400
   height 100%
   line-height 2em
@@ -128,7 +128,7 @@ ul
     text-shadow none
 
 @media screen
-  @media (min-width: 700px)
+  @media (min-width: 800px)
     body
       text-align left
 
@@ -153,7 +153,7 @@ ul
       .footer
         margin 5em 0
 
-  @media (min-width: 900px)
+  @media (min-width: 1050px)
     body
       .section
         &.communications,
