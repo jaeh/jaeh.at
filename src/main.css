@@ -29,12 +29,15 @@ body
 
 h2,
 h3
-  margin 1em 0 0
+  margin 2em 0 0
+.communications
+  h2, h3
+    margin 0
 
 h2
-  font-size 1.5em
+  font-size 1.3em
 h3
-  font-size 1.2em
+  font-size 1.1em
 
 a
   color $link-color-dark
@@ -146,7 +149,8 @@ ul
         float left
         width 50%
 
-        &.projects
+        &.projects,
+        &.congregations
           clear both
           width 100%
 
@@ -168,6 +172,7 @@ ul
           max-width 25%
           width auto
 
-        &.projects
+        &.projects,
+        &.congregations
           max-width inherit
           width 100%
