@@ -1,11 +1,13 @@
-extends /page.pug
+<extends src="page.html">
+  <block name="title">
+    <title>404 page</title>
+  </block>
 
-block title
-  title 404 page
+  <block name="content">
+    <div>redirecting...</div>
+  </block>
 
-block content
-  div redirecting...
-
-block scripts
-  script.
-    window.location.href = '/'
+  <block name="scripts">
+    <script>window.location.href = "/"</script>
+  </block>
+</extends>

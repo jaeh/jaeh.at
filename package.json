@@ -16,7 +16,7 @@
   "license": "AGPL-3.0",
   "devDependencies": {
     "@mspg/core": "github:mspg/core",
-    "@mspg/transpile-pug": "github:mspg/transpile-pug",
+    "@mspg/transpile-posthtml": "github:mspg/transpile-posthtml",
     "@mspg/transpile-stylus": "github:mspg/transpile-stylus"
   }
 }

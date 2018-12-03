@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <block name="title">
+      <title>jaeh.at - {{FIRST_NAME}} {{LAST_NAME}}</title>
+    </block>
+
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/main.css" />
+
+    <block name="meta">
+      <meta property="og:title" content="{{ FIRST_NAME }} {{ LAST_NAME }} - {{ JOB_DESCRIPTION }}" />
+
+      <meta property="og:image" content="/img/{{ FIRST_NAME }}.{{ LAST_NAME }}.jpg" />
+
+      <meta
+        name="description"
+        property="og:description"
+        content="{{DESCRIPTION.join(' ')}}"
+      />
+    </block>
+    <block name="styles"></block>
+  </head>
+  <body id="♥">
+    <div id="main">
+      <div class="header main">
+        <div class="header__image">
+          <img 
+            class="face"
+            alt="home"
+            src="/img/{{ FIRST_NAME }}.{{ LAST_NAME }}.jpg"
+          />
+          <img 
+            class="body"
+            alt="home"
+            src="/img/{{ FIRST_NAME }}.{{ LAST_NAME }}.body.jpg"
+          />
+        </div>
+
+        <div class="text">
+          <h2>
+            <a href="/">{{ FIRST_NAME }} {{ LAST_NAME }}</a>
+          </h2>
+
+          <h3>{{ JOB_DESCRIPTION }}</h3>
+
+          <block name="hero-content">
+            <if condition="typeof DESCRIPTION !== 'undefined'">
+              <div class="description">
+                <each loop="desc in DESCRIPTION">
+                  <p>{{desc}}</p>
+                </each>
+              </div>
+            </if>
+          </block>
+        </div>
+      </div>
+
+      <div class="article">
+        <block name="content"></block>
+      </div>
+
+      <div class="footer main">
+        <a 
+          class="anarchy"
+          title="Lick here, you might be one of the lucky 23."
+          href="http://principiadiscordia.com"
+          target="allhaileris"
+        >Ⓐ </a>
+
+        <span>1982 - {{ year }} all rites reversed</span>
+      </div>
+    </div>
+
+    <block name="scripts"></block>
+  </body>
+</html>

@@ -1,64 +1,96 @@
-extends /page.pug
+<extends src="page.html">
+  <block name="content">
+    <div class="section communications">
+      <h3>communications</h3>
+      <ul>
+        <li>
+          <span>email: </span>
+          <a href="mailto:jascha@jaeh.at">jascha<span class="at">@</span>jaeh.at</a>
+        </li>
+        <li>
+          <span>github: </span>
+          <a 
+            target="github-jaeh" 
+            rel="nofollow noindex noopener" 
+            href="https://github.com/jaeh"
+          ><span class="at">@</span>jaeh</a>
+        </li>
 
-block content
-  .section.communications
-    h3 communications
-    ul
-      li
-        span= 'email: '
-        a(href='mailto:jascha@jaeh.at')
-          | jascha
-          span.at @
-          | jaeh.at
+        <li>
+          <span>keybase: </span>
+          <a 
+            target="keybase-jascha" 
+            rel="nofollow noindex noopener" 
+            href="https://keybase.io/jascha"
+          ><span class="at">@</span>jascha</a>
 
-      li
-        span= 'jabber: '
-        a(href='xmpp:jascha@jabber.metalab.at')
-          | jascha
-          span.at @
-          | jabber.metalab.at
+        <li>
+          <span>twitter: </span>
+          <a 
+            target="twitter-weirdpress" 
+            rel="nofollow noindex noopener" 
+            href="https://twitter.com/weirdpress"
+          ><span class="at">@</span>weirdpress</a>
+        </li>
+      </ul>
+    </div>
 
-      li
-        span= 'github: '
-        a(target='github-jaeh' rel="nofollow noindex noopener" href='https://github.com/jaeh')
-          | jaeh
+    <div class="section congregations">
+      <h3>congregations</h3>
+      <ul>
+        <li>
+          <a 
+            href="http://wizardsatwork.at" 
+            target="wizardsatwork" 
+            rel="nofollow noindex noopener"
+          >wizard at work</a>
+        </li>
+        <li>
+          <a 
+            href="https://metalab.at" 
+            target="metalab" 
+            rel="nofollow noindex noopener"
+          >hacking @ metalab</a>
+        </li>
+        <li>
+          <a 
+            href="https://bwb.is" 
+            target="bwb" 
+            rel="nofollow noindex noopener"
+          >bitcoiner without borders</a>
+        </li>
+      </ul>
+    </div>
 
-      li
-        span= 'keybase: '
-        a(target='keybase-jascha' rel="nofollow noindex noopener" href='https://keybase.io/jascha')
-          span.at @
-          | jascha
+    <div class="section projects">
+      <h3>projects</h3>
+      <ul>
+        <li>
+          <a 
+            href="http://magicshifter.net" 
+            rel="nofollow noindex noopener" 
+            target="magicshifter"
+          >magicshifter</a>
+        </li>
+        <li>
+          <a 
+            href="http://screeninvader.com/" 
+            rel="nofollow noindex noopener" 
+            target="screeninvader"
+          >screeninvader</a>
+        </li>
+        <li>
+          <a>???</a>
+        </li>
+      </ul>
+    </div>
 
-      li
-        span= 'twitter: '
-        a(target='twitter-weirdpress' rel="nofollow noindex noopener" href='https://twitter.com/weirdpress')
-          span.at @
-          | weirdpress
-
-  .section.congregations
-    h3 congregations
-    ul
-      li
-        a(href='https://metalab.at' target='metalab' rel="nofollow noindex noopener") hacking @ metalab
-
-      li
-        a(href='https://bwb.is' target='bwb' rel="nofollow noindex noopener") bitcoiner without borders
-
-      li
-        a(href='http://wizardsatwork.at' target='wizardsatwork' rel="nofollow noindex noopener") wizard at work
-
-  .section.projects
-    h3 projects
-    ul
-      li
-        a(href='http://screeninvader.com/' rel="nofollow noindex noopener" target='screeninvader') screeninvader
-      li
-        a(href='http://magicshifter.net' rel="nofollow noindex noopener" target='magicshifter') magicshifter
-      li
-        a ???
-
-  .section.unlicense
-    h3 licenses
-    div
-      span= 'If there is no license attached to code i wrote, then i consider it to be '
-      a(href='/unlicense') free and unlicensed
+    <div class="section unlicense">
+      <h3>licenses</h3>
+      <div>
+        <span>If there is no license attached to code i wrote, then i consider it to be </span>
+        <a href="/unlicense"> free and unlicensed</a>
+      </div>
+    </div>
+  </block>
+</extends>
