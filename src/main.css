@@ -148,6 +148,7 @@ ul
 
         &.projects
           clear both
+          width 100%
 
         &.unlicense
           max-width 100%
@@ -166,3 +167,7 @@ ul
           margin 0 2em 0 0
           max-width 25%
           width auto
+
+        &.projects
+          max-width inherit
+          width 100%
