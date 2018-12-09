@@ -14,9 +14,9 @@ module.exports = {
   LAST_NAME: 'ehrenreich',
   JOB_DESCRIPTION: 'programmer & streetartist',
   DESCRIPTION: [
-    'i juggle with code since fifteen,',
-    'with cones, balls and rings since twentyfive,',
-    'and life juggles with me since around thirtyfive years.',
+    'i juggle with code since sixteen,',
+    'with cones, balls and rings since twentysix,',
+    'and life juggles with me since around thirtysix years.',
     'i enjoy all of it.',
   ],
   year,
