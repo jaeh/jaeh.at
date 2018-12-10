@@ -21,7 +21,7 @@ ul{list-style:none;}
 .header__image:hover img:nth-child(2){opacity:1;}
 .article{clear:both;display:inline-block;min-height:40vh;}
 .section{clear:both;margin:2em 0 1em;}
-.section h3{margin:0 0 0.2em;}
+.section h3{margin:1em 0 0.2em;}
 .section.unlicense a{display:inline-block;line-height:1.1;}
 .section.unlicense.page{max-width:100%;}
 .footer{clear:both;font-size:0.7em;margin:1em 0 0;text-align:center;width:100%;}
