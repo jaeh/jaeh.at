@@ -1,22 +1,29 @@
 {
-  "name": "jaeh.github.io",
+  "name": "jaeh.at",
   "version": "0.23.5",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "mspg build serve watch",
-    "build": "NODE_ENV=production mspg clean build zip",
-    "build:serve": "NODE_ENV=production mspg build serve zip",
-    "lint:css": "mspg lint css",
-    "lint:html": "mspg lint html",
-    "publish": "NODE_ENV=production mspg build zip publish"
+    "start": "t -p",
+    "format": "f -w",
+    "test": "t",
+    "build": "NODE_ENV=production magic build",
+    "dev": "magic dev",
+    "publish": "magic publish",
+    "connect": "magic connect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaeh/jaeh.at.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jascha Ehrenreich",
   "license": "AGPL-3.0",
+
+  "bugs": {
+    "url": "https://github.com/jaeh/jaeh.at/issues"
+  },
+  "homepage": "https://github.com/jaeh/jaeh.at#readme",
   "devDependencies": {
-    "@mspg/core": "github:mspg/core",
-    "@mspg/transpile-posthtml": "github:mspg/transpile-posthtml",
-    "@mspg/transpile-stylus": "github:mspg/transpile-stylus"
+    "@magic/core": "github:magic/core",
+    "@magic/test": "0.0.2"
   }
 }
