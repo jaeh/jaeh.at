@@ -1,31 +1,32 @@
-<extends src="page.html">
-  <block name="content">
-    <div class="page clicense">
-      <h3>Licensing</h3>
+module.exports = {
+  View: (state, actions) => [
+    Header.View,
+    div({ class: 'page license' }, [
+      h3('Licensing'),
 
-      <p>
+      p(`
         If there is no license attached to code i wrote,
         then i consider it to be free as in freedom and in the public domain.
-      </p>
-      <p>
+      `),
+      p(`
         For those who like (or need) legalese i attach the contents of the unlicense here.
-      </p>
-      <p>
-        <span>If you entered my page through a link and want to know more, just use </span>
-        <a href='/'>this link</a>
-        <span> to read more about me.</span>
-      </p>
+      `),
+      p([
+        span('If you entered my page through a link and want to know more, just use '),
+        Link({ to: '/' }, 'this link'),
+        span(' to read more about me.'),
+      ]),
 
-      <h3>Unlicense:</h3>
+      h3('Unlicense:'),
 
-      <p>This is free and unencumbered software released into the public domain.</p>
+      p(`This is free and unencumbered software released into the public domain.`),
 
-      <p>
+      p(`
         Anyone is free to copy, modify, publish, use, compile, sell, or
         distribute this software, either in source code form or as a compiled
         binary, for any purpose, commercial or non-commercial, and by any means.
-      </p>
-      <p>
+      `),
+      p(`
         In jurisdictions that recognize copyright laws, the author or authors
         of this software dedicate any and all copyright interest in the
         software to the public domain. We make this dedication for the benefit
@@ -33,20 +34,20 @@
         successors. We intend this dedication to be an overt act of
         relinquishment in perpetuity of all present and future rights to this
         software under copyright law.
-      </p>
-      <p>
-        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+      `),
+      p(`
+        THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
         EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
         MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
         IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
         OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
         ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
         OTHER DEALINGS IN THE SOFTWARE.
-      </p>
-      <p>
-        <span>For more information, please refer to </span>
-        <a href='https://unlicense.org' target='unlicense' rel="noreferrer nofollow noindex noopener">unlicense.org</a>
-      </p>
-    </div>
-  </block>
-</extends>
+      `),
+      p([
+        span('For more information, please refer to '),
+        Link({ to: 'https://unlicense.org' }, 'unlicense.org'),
+      ]),
+    ]),
+  ],
+}
