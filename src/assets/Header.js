@@ -77,9 +77,7 @@ module.exports = {
       ]),
 
       div({ class: 'text' }, [
-        h2([
-          Link({ to: '/'}, 'jascha ehrenreich'),
-        ]),
+        h2([Link({ to: '/' }, 'jascha ehrenreich')]),
 
         h3('programmer and streetartist'),
 

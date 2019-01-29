@@ -8,8 +8,9 @@ const theme = vars => ({
     backgroundColor: vars.backgroundColor,
     border: 0,
     color: vars.textColor,
-    fontFamily: 'Ubuntu, "Segoe UI", roboto, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif',
-    fontSize: '18px',
+    fontFamily:
+      'Ubuntu, "Segoe UI", roboto, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif',
+    fontSize: '15px',
     fontWeight: 400,
     height: '100%',
     lineHeight: '2em',
@@ -36,12 +37,16 @@ const theme = vars => ({
     textDecoration: 'none',
     transition: 'color 500ms, box-shadow 500ms',
     boxShadow: `inset 0 -1px 0 0 ${vars.backgroundColor}, inset 0 -2px 0 0 ${vars.linkColorLight}`,
-    textShadow: `1px 1px 0 ${vars.backgroundColor}, -1px 1px 0 ${vars.backgroundColor}, 2px 0 0 ${vars.backgroundColor}, -2px 0 0 ${vars.backgroundColor}`,
+    textShadow: `1px 1px 0 ${vars.backgroundColor}, -1px 1px 0 ${vars.backgroundColor}, 2px 0 0 ${
+      vars.backgroundColor
+    }, -2px 0 0 ${vars.backgroundColor}`,
 
     '&:hover': {
       color: vars.linkColorLight,
       boxShadow: `inset 0 -1px 0 0 ${vars.backgroundColor}, inset 0 -2px 0 0 ${vars.linkColorDark}`,
-      textShadow: `1px 1px 0 ${vars.backgroundColor}, -1px 1px 0 ${vars.backgroundColor}, 2px 0 0 ${vars.backgroundColor}, -2px 0 0 ${vars.backgroundColor}`,
+      textShadow: `1px 1px 0 ${vars.backgroundColor}, -1px 1px 0 ${vars.backgroundColor}, 2px 0 0 ${
+        vars.backgroundColor
+      }, -2px 0 0 ${vars.backgroundColor}`,
     },
   },
 
@@ -109,6 +114,7 @@ const theme = vars => ({
   '@media screen and (min-width: 800px': {
     body: {
       textAlign: 'left',
+      fontSize: '18px',
 
       '.header__image': {
         float: 'left',

@@ -8,9 +8,7 @@ module.exports = {
     div([
       h3('404 - page not found.'),
       p('Unfortunately, there is nothing here but nothingness.'),
-      p([
-        Link({ to: '/' }, 'Click here'), ' to get back to safety',
-      ]),
+      p([Link({ to: '/' }, 'Click here'), ' to get back to safety']),
     ]),
   ],
 }
