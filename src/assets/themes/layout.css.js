@@ -9,6 +9,8 @@ module.exports = {
   },
 
   '.page': {
+    minHeight: '90vh',
+
     header: {
       margin: '0 0 .5em',
     },

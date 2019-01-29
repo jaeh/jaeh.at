@@ -1,4 +1,17 @@
 module.exports = {
+  style: {
+    '.footer.main span': {
+      display: 'block',
+      lineHeight: '1.3',
+    },
+
+    '@media screen and (min-width: 500px)': {
+      '.footer.main span': {
+        display: 'inherit',
+      },
+    },
+  },
+
   View: () =>
     div({ class: 'footer main' }, [
       span([
