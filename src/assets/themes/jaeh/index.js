@@ -13,7 +13,7 @@ const theme = vars => ({
     fontSize: '15px',
     fontWeight: 400,
     height: '100%',
-    lineHeight: '2em',
+    lineHeight: '1.6',
     margin: 0,
     overflowY: 'scroll',
     padding: 0,
@@ -129,7 +129,7 @@ const theme = vars => ({
         float: 'left',
         width: '50%',
 
-        '&.projects, &.congregations': {
+        '&.occupations, &.congregations': {
           clear: 'both',
           width: '100%',
         },
@@ -148,13 +148,13 @@ const theme = vars => ({
   '@media screen and (min-width: 1100px)': {
     body: {
       '.section': {
-        '&.communications, &.congregations, &.projects, &.unlicense': {
+        '&.communications, &.congregations, &.occupations, &.unlicense': {
           clear: 'none',
           margin: '0 2em 0 0',
           maxWidth: '25%',
           width: 'auto',
         },
-        '&.projects, &.congregations': {
+        '&.occupations, &.congregations': {
           maxWidth: 'inherit',
           width: '100%',
         },
