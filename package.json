@@ -17,13 +17,12 @@
   "keywords": [],
   "author": "Jascha Ehrenreich",
   "license": "AGPL-3.0",
-
   "bugs": {
     "url": "https://github.com/jaeh/jaeh.at/issues"
   },
   "homepage": "https://github.com/jaeh/jaeh.at#readme",
   "devDependencies": {
     "@magic/core": "github:magic/core",
-    "@magic/test": "0.0.2"
+    "@magic/test": "0.0.3"
   }
 }
