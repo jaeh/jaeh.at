@@ -111,7 +111,7 @@ const theme = vars => ({
     },
   },
 
-  '@media screen and (min-width: 800px': {
+  '@media screen and (min-width: 800px)': {
     body: {
       textAlign: 'left',
       fontSize: '18px',
