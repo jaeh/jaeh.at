@@ -106,8 +106,8 @@ module.exports = {
       ]),
     ]),
 
-    div({ class: 'section projects' }, [
-      h2('projects'),
+    div({ class: 'section occupations' }, [
+      h2('occupations'),
       ul([
         li([
           h3([
