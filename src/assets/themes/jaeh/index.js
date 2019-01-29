@@ -10,7 +10,7 @@ const theme = vars => ({
     color: vars.textColor,
     fontFamily: 'Ubuntu, "Segoe UI", roboto, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif',
     fontSize: '18px',
-    fontWeight: '400',
+    fontWeight: 400,
     height: '100%',
     lineHeight: '2em',
     margin: 0,
@@ -23,12 +23,6 @@ const theme = vars => ({
 
   'h2, h3': {
     margin: '2em 0 0',
-  },
-
-  '.communications': {
-    'h2, h3': {
-      margin: 0,
-    },
   },
 
   h2: {
@@ -73,7 +67,7 @@ const theme = vars => ({
     margin: '2em 0 1em',
 
     h3: {
-      margin: '1em 0 .2em',
+      margin: '.5em 0 .2em',
     },
 
     '&.unlicense': {
@@ -84,6 +78,14 @@ const theme = vars => ({
     },
     '&.page': {
       maxWidth: '100%',
+    },
+
+    '&.communications': {
+      margin: 0,
+
+      'h2, h3': {
+        margin: 0,
+      },
     },
   },
 
