@@ -17,7 +17,7 @@ module.exports = {
         span(' to read more about me.'),
       ]),
 
-      h3('Unlicense:'),
+      h3('Unlicense'),
 
       p(`This is free and unencumbered software released into the public domain.`),
 
