@@ -1,13 +1,18 @@
 module.exports = {
   style: {
-    '.footer.main span': {
-      display: 'block',
-      lineHeight: '1.3',
+    '.footer.main': {
+      display: 'inline-block',
+      margin: '3em 0 1em',
+
+      span: {
+        display: 'block',
+        lineHeight: '1.3',
+      },
     },
 
     '@media screen and (min-width: 500px)': {
       '.footer.main span': {
-        display: 'inherit',
+        display: 'inline',
       },
     },
   },
