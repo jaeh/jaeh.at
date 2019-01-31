@@ -6,7 +6,7 @@
     "format": "f -w",
     "test": "t",
     "build": "NODE_ENV=production magic build",
-    "build:serve": "NODE_ENV=production magic build serve",
+    "prod": "NODE_ENV=production magic build serve",
     "dev": "magic dev",
     "publish": "magic publish",
     "connect": "magic connect"
