@@ -151,30 +151,9 @@ module.exports = {
             ),
           ]),
           p('magic static/serverless page generator.'),
-          h4('static files:'),
-          p([
-            'publishes to ',
-            Link({ to: 'https://github.com' }, 'github'),
-            ', ',
-            Link({ to: 'https://gitlab.com' }, 'gitlab'),
-            ' and any other git enabled hosting service.'
-          ]),
-          p('SOON: publish static files to now.sh'),
-
-          h4('serverless / faas'),
-          p([
-            'SOON: automagically generates ',
-            Link({ to: 'https://now.sh' }, 'now.sh'),
-            ' lambdas, derived from the ',
-            Link({ to: 'https://github.com/magic-modules/' }, '@magic-modules'),
-            ' you use in your pages.',
-            ' this will make visitor statistics, user authentication and authorization, chat, and all other server side goodies possible.',
-          ]),
-          p('did i mention that all of this is FREE (as in beer) for the static file hosting? yes, it really is.'),
-          p('additionally, now.sh offers 1000 free daily interactions with the serverless functions.'),
         ]),
 
-        li([a('???')]),
+        li([h3([a('???')])]),
       ]),
     ]),
 
