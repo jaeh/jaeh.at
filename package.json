@@ -24,6 +24,6 @@
   "homepage": "https://github.com/jaeh/jaeh.at#readme",
   "devDependencies": {
     "@magic/core": "github:magic/core",
-    "@magic/test": "0.0.3"
+    "@magic/test": "0.0.5"
   }
 }
