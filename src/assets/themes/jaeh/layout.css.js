@@ -1,4 +1,8 @@
 module.exports = {
+  '*': {
+    boxSizing: 'border-box',
+  },
+
   body: {
     minHeight: '100vh',
   },
