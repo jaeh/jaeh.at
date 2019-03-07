@@ -12,4 +12,11 @@ module.exports = {
     borderColor: '#F57C00',
     maxWidth: '1200px',
   },
+  FOR_DEATH_CAN_NOT_HAVE_HIM: true,
+
+  SMTP: {
+    USER: process.env.SMTP_USER,
+    PASS: process.env.SMTP_PASS,
+    TO: 'contact@jaeh.at',
+  },
 }
