@@ -6,11 +6,11 @@ module.exports = {
       ul([
         li([
           span('email: '),
-          a({ href: 'mailto:jascha@jaeh.at' }, ['jascha', span({ class: 'at' }, '@'), 'jaeh.at']),
+          Link({ href: 'mailto:jascha@jaeh.at' }, ['jascha', span({ class: 'at' }, '@'), 'jaeh.at']),
         ]),
         li([
           span('github: '),
-          a(
+          Link(
             {
               href: 'https://github.com/jaeh',
               rel: 'nofollow noopener',
@@ -22,7 +22,7 @@ module.exports = {
 
         li([
           span('keybase: '),
-          a(
+          Link(
             {
               href: 'https://keybase.io/jascha',
               rel: 'nofollow noopener',
@@ -33,7 +33,7 @@ module.exports = {
         ]),
         li([
           span('twitter: '),
-          a(
+          Link(
             {
               href: 'https://twitter.com/weirdpress',
               rel: 'nofollow noopener',
@@ -50,7 +50,7 @@ module.exports = {
       ul([
         li([
           h3([
-            a(
+            Link(
               {
                 href: 'http://wizardsatwork.at',
                 rel: 'noopener',
@@ -66,7 +66,7 @@ module.exports = {
         ]),
         li([
           h3([
-            a(
+            Link(
               {
                 href: 'https://metalab.at',
                 rel: 'noopener',
@@ -79,7 +79,7 @@ module.exports = {
         ]),
         li([
           h3([
-            a(
+            Link(
               {
                 href: 'https://bwb.is',
                 rel: 'noopener',
@@ -91,7 +91,7 @@ module.exports = {
           p('working in and on decentralized systems since 2012.'),
           p([
             'managed the ',
-            a(
+            Link(
               {
                 href: 'https://bitcoinfoundation.org',
                 rel: 'nofollow noindex noopener',
@@ -111,7 +111,7 @@ module.exports = {
       ul([
         li([
           h3([
-            a(
+            Link(
               {
                 href: 'http://magicshifter.net',
                 rel: 'noopener',
@@ -126,7 +126,7 @@ module.exports = {
         ]),
         li([
           h3([
-            a(
+            Link(
               {
                 href: 'http://screeninvader.com/',
                 rel: 'noopener',
@@ -141,7 +141,7 @@ module.exports = {
         ]),
         li([
           h3([
-            a(
+            Link(
               {
                 href: 'http://github.com/magic/core',
                 rel: 'nofollow noindex noopener',
@@ -153,7 +153,7 @@ module.exports = {
           p('magic static/serverless page generator.'),
         ]),
 
-        li([h3([a('???')])]),
+        li([h3([Link('???')])]),
       ]),
     ]),
 
@@ -163,6 +163,18 @@ module.exports = {
         span('If there is no license attached to code i wrote, then i consider it to be '),
         Link({ to: '/unlicense/' }, 'free and unlicensed'),
       ]),
+    ]),
+
+    div({ class: 'section contact' }, [
+      h2('contact'),
+      div([
+        p('this contactform below sends me an email via gmail.'),
+        p([
+          span('if you want to contact me directly just send a mail to '),
+          Link({ to: 'mailto:j@jaeh.at' }, 'j@jaeh.at'),
+        ]),
+      ]),
+      Contact(),
     ]),
   ],
 }
