@@ -1,0 +1,6 @@
+{
+  "env": [
+    "SMTP_USER",
+    "SMTP_PASS"
+  ]
+}
