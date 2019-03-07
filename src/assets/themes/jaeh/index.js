@@ -123,41 +123,8 @@ const theme = vars => ({
         width: '29vw',
       },
 
-      '.section': {
-        clear: 'none',
-        display: 'inline-block',
-        float: 'left',
-        width: '50%',
-
-        '&.occupations, &.congregations': {
-          clear: 'both',
-          width: '100%',
-        },
-
-        '&.unlicense': {
-          maxWidth: '100%',
-        },
-
-        '.footer': {
-          margin: '5em 0',
-        },
-      },
-    },
-  },
-
-  '@media screen and (min-width: 1100px)': {
-    body: {
-      '.section': {
-        '&.communications, &.congregations, &.occupations, &.unlicense': {
-          clear: 'none',
-          margin: '0 2em 0 0',
-          maxWidth: '25%',
-          width: 'auto',
-        },
-        '&.occupations, &.congregations': {
-          maxWidth: 'inherit',
-          width: '100%',
-        },
+      '.footer': {
+        margin: '5em 0',
       },
     },
   },
