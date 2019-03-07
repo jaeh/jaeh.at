@@ -2,5 +2,10 @@
   "env": [
     "SMTP_USER",
     "SMTP_PASS"
+  ],
+
+  "builds": [
+    { "src": "./api/*.js", "use": "@now/node" },
+    { "str": "./public", "use": "@now/static" }
   ]
 }
