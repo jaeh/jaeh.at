@@ -6,7 +6,11 @@ module.exports = {
       ul([
         li([
           span('email: '),
-          Link({ href: 'mailto:jascha@jaeh.at' }, ['jascha', span({ class: 'at' }, '@'), 'jaeh.at']),
+          Link({ href: 'mailto:jascha@jaeh.at' }, [
+            'jascha',
+            span({ class: 'at' }, '@'),
+            'jaeh.at',
+          ]),
         ]),
         li([
           span('github: '),
@@ -101,7 +105,6 @@ module.exports = {
             ),
             ' webproperties from 2012-2014.',
           ]),
-          p('got fired when the statists took over.'),
         ]),
       ]),
     ]),
