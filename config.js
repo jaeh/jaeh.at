@@ -1,6 +1,14 @@
+const path = require('path')
+
 module.exports = {
   ROOT: 'src',
   THEME: 'jaeh',
+
+  DIR: {
+    PUBLIC: path.join('dist', 'public'),
+    API: path.join('dist', 'api'),
+  },
+
   THEME_VARS: {
     black: '#010101',
     white: '#FEFEFE',
