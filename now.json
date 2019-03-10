@@ -5,7 +5,7 @@
   ],
 
   "builds": [
-    { "src": "./api/*.js", "use": "@now/node" },
-    { "str": "./public", "use": "@now/static" }
+    { "src": "./dist/api", "use": "@now/node" },
+    { "str": "./dist/public", "use": "@now/static" }
   ]
 }
