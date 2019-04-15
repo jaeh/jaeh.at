@@ -1,11 +1,14 @@
 module.exports = {
   View: (state, actions) => [
-    Header({ job: 'technomant', description: [
-      'ich jongliere mit code seit sechszehn,',
-      'mit keulen, bällen und ringen seit sechsundzwanzig',
-      'und das leben jongliert mit mir seit ungefähr sechsunddreissig jahren.',
-      'ich geniesse das alles.',
-    ] }),
+    Header({
+      job: 'technomant',
+      description: [
+        'ich jongliere mit code seit sechszehn,',
+        'mit keulen, bällen und ringen seit sechsundzwanzig',
+        'und das leben jongliert mit mir seit ungefähr sechsunddreissig jahren.',
+        'ich geniesse das alles.',
+      ],
+    }),
     LanguageSwitch({ text: 'english', to: '/' }),
     div({ class: 'section communications' }, [
       h2('kommunikation'),
