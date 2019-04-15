@@ -1,7 +1,7 @@
 module.exports = {
   View: (state, actions) => [
     Header.View,
-    Link({ class: 'LanguageSwitch', to: '/' }, 'english'),
+    LanguageSwitch({ text: 'english', to: '/' }),
     div({ class: 'section communications' }, [
       h2('kommunikation'),
       ul([
