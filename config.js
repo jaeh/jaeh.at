@@ -5,8 +5,8 @@ module.exports = {
   THEME: 'jaeh',
 
   DIR: {
-    PUBLIC: path.join('dist', 'public'),
-    API: path.join('dist', 'api'),
+    PUBLIC: path.join('docs'),
+    //API: path.join('dist', 'api'),
   },
 
   THEME_VARS: {

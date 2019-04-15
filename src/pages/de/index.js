@@ -1,9 +1,9 @@
 module.exports = {
   View: (state, actions) => [
     Header.View,
-    Link({ class: 'LanguageSwitch', to: '/de/' }, 'deutsch'),
+    Link({ class: 'LanguageSwitch', to: '/' }, 'english'),
     div({ class: 'section communications' }, [
-      h2('communications'),
+      h2('kommunikation'),
       ul([
         li([
           span('email: '),
@@ -51,7 +51,7 @@ module.exports = {
     ]),
 
     div({ class: 'section congregations' }, [
-      h2('congregations'),
+      h2('kongregation'),
       ul([
         li([
           h3([
@@ -65,9 +65,9 @@ module.exports = {
             ),
           ]),
           p(
-            'we are a tribe of makers, programmers, engineers, philosophers, activists, hackers, artists, clowns, and scientists.',
+            'wir sind ein stamm von erfindern, programmierern, philosophen, aktivisten, hackern, k&uml;nstlern, clowns und wissenschafltern,'
           ),
-          p('we are wizards & witches @ work, magically shifting paradigms.'),
+          p('wir sind wizards & witches @ work, unsere magie transformiert paradigmen.'),
         ]),
         li([
           h3([
@@ -80,7 +80,7 @@ module.exports = {
               'metalab',
             ),
           ]),
-          p('the metalab is a hack/make space in vienna, austria.'),
+          p('das metalab ist ein hack/make space in wien, &ouml;sterreich.'),
         ]),
         li([
           h3([
@@ -93,9 +93,9 @@ module.exports = {
               'bitcoiners without borders',
             ),
           ]),
-          p('working in and on decentralized systems since 2012.'),
+          p('wir arbeiten seit 2012 an und in dezentralisierten systemen.'),
           p([
-            'managed the ',
+            'zb. verwaltung der ',
             Link(
               {
                 href: 'https://bitcoinfoundation.org',
@@ -104,14 +104,14 @@ module.exports = {
               },
               'bitcoinfoundation',
             ),
-            ' webproperties from 2012-2014.',
+            ' webproperties von 2012-2014.',
           ]),
         ]),
       ]),
     ]),
 
     div({ class: 'section occupations' }, [
-      h2('occupations'),
+      h2('projekte'),
       ul([
         li([
           h3([
@@ -125,7 +125,7 @@ module.exports = {
             ),
           ]),
           p(
-            'open source hardware gadget for lighting, gaming, sound and persistence of vision applications.',
+            'open source hardware gadget f&uuml;r licht-, spiel-, sound- und persistente wahrnehmungs anwendungen.',
           ),
         ]),
         li([
@@ -140,7 +140,7 @@ module.exports = {
             ),
           ]),
           p(
-            'surf the web, watch videos or browse images the way you usually do, then show it on any screen and/or projector.',
+            'kollaboratives internetzsurfen, videoschaun oder bilder browsen.',
           ),
         ]),
         li([
@@ -154,7 +154,7 @@ module.exports = {
               'magic',
             ),
           ]),
-          p('magic static/serverless page generator.'),
+          p('magische generation von statischen und serverlosen webseiten.'),
         ]),
       ]),
     ]),
