@@ -1,6 +1,11 @@
 module.exports = {
   View: (state, actions) => [
-    Header.View,
+    Header({ job: 'technomant', description: [
+      'ich jongliere mit code seit sechszehn,',
+      'mit keulen, bällen und ringen seit sechsundzwanzig',
+      'und das leben jongliert mit mir seit ungefähr sechsunddreissig jahren.',
+      'ich geniesse das alles.',
+    ] }),
     LanguageSwitch({ text: 'english', to: '/' }),
     div({ class: 'section communications' }, [
       h2('kommunikation'),
@@ -65,7 +70,7 @@ module.exports = {
             ),
           ]),
           p(
-            'wir sind ein stamm von erfindern, programmierern, philosophen, aktivisten, hackern, k&uml;nstlern, clowns und wissenschafltern,'
+            'wir sind ein stamm von erfindern, programmierern, philosophen, aktivisten, hackern, künstlern, clowns und wissenschafltern,',
           ),
           p('wir sind wizards & witches @ work, unsere magie transformiert paradigmen.'),
         ]),
@@ -80,7 +85,7 @@ module.exports = {
               'metalab',
             ),
           ]),
-          p('das metalab ist ein hack/make space in wien, &ouml;sterreich.'),
+          p('das metalab ist ein hack/make space in wien, österreich.'),
         ]),
         li([
           h3([
@@ -125,7 +130,7 @@ module.exports = {
             ),
           ]),
           p(
-            'open source hardware gadget f&uuml;r licht-, spiel-, sound- und persistente wahrnehmungs anwendungen.',
+            'open source hardware gadget für licht-, spiel-, sound- und persistente wahrnehmungs anwendungen.',
           ),
         ]),
         li([
@@ -139,9 +144,7 @@ module.exports = {
               'screeninvader',
             ),
           ]),
-          p(
-            'kollaboratives internetzsurfen, videoschaun oder bilder browsen.',
-          ),
+          p('kollaboratives internetzsurfen, videoschaun oder bilder browsen.'),
         ]),
         li([
           h3([
