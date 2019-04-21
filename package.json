@@ -24,7 +24,7 @@
   "homepage": "https://github.com/jaeh/jaeh.at#readme",
   "devDependencies": {
     "@magic/core": "github:magic/core",
-    "@magic/test": "0.0.6"
+    "@magic/test": "0.0.7"
   },
   "dependencies": {
     "@magic-modules/contact": "github:magic-modules/contact"
