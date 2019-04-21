@@ -25,8 +25,5 @@
   "devDependencies": {
     "@magic/core": "github:magic/core",
     "@magic/test": "0.0.7"
-  },
-  "dependencies": {
-    "@magic-modules/contact": "github:magic-modules/contact"
   }
 }
