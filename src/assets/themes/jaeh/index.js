@@ -4,6 +4,12 @@ const theme = vars => ({
     color: vars.backgroundColor,
     textShadow: 'none',
   },
+
+  '*': {
+    scrollbarColor: `${vars.linkColorLight} ${vars.backgroundColor}`,
+    scrollbarWidth: 'thin',
+  },
+
   body: {
     backgroundColor: vars.backgroundColor,
     border: 0,
