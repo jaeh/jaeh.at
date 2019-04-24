@@ -1,4 +1,7 @@
 module.exports = {
+  state: {
+    lang: 'de',
+  },
   View: (state, actions) => [
     Header({
       job: 'technomant',
