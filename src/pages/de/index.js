@@ -138,7 +138,7 @@ module.exports = {
           p([
             'open source hardware gadget für lichtmagie, spieltriebbefriedigung,',
             ' und soundanwendungen.',
-            ' überlistet die persistente wahrnehmung.'
+            ' überlistet die persistente wahrnehmung.',
           ]),
         ]),
         li([
