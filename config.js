@@ -3,11 +3,7 @@ const path = require('path')
 module.exports = {
   ROOT: 'src',
   THEME: 'jaeh',
-
-  DIR: {
-    PUBLIC: path.join('docs'),
-    //API: path.join('dist', 'api'),
-  },
+  PUBLIC: 'docs',
 
   THEME_VARS: {
     black: '#010101',
