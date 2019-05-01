@@ -135,9 +135,11 @@ module.exports = {
               'magicshifter',
             ),
           ]),
-          p(
-            'open source hardware gadget für licht-, spiel-, sound- und persistente wahrnehmungs anwendungen.',
-          ),
+          p([
+            'open source hardware gadget für lichtmagie, spieltriebbefriedigung,',
+            ' und soundanwendungen.',
+            ' überlistet die persistente wahrnehmung.'
+          ]),
         ]),
         li([
           h3([
