@@ -1,5 +1,5 @@
 const Header = props => state =>
-  div({ class: 'header main' }, [
+  div({ class: 'Header' }, [
     div({ class: 'header__image' }, [
       img({
         alt: '',
@@ -25,7 +25,7 @@ const Header = props => state =>
   ])
 
 Header.style = {
-  '.header.main': {
+  '.Header': {
     display: 'inline-block',
     margin: '0 0 .5em',
     width: '100%',
@@ -34,7 +34,6 @@ Header.style = {
       margin: 0,
     },
   },
-
   '.header__image': {
     borderRadius: '10%',
     boxShadow: '0 0 2em black',
@@ -73,13 +72,11 @@ Header.style = {
   },
 
   '@media screen and (min-width: 800px)': {
-    body: {
-      '.header__image': {
-        float: 'left',
-        height: '29vw',
-        margin: '0 2em 3em 0',
-        width: '29vw',
-      },
+    '.header__image': {
+      float: 'left',
+      height: '29vw',
+      margin: '0 2em 3em 0',
+      width: '29vw',
     },
   },
 }
