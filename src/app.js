@@ -7,5 +7,9 @@ module.exports = {
       'and life juggles with me since around thirtysix years.',
       'i enjoy all of it.',
     ],
+    languages: [
+      { text: 'english', to: '/', code: 'en' },
+      { text: 'deutsch', to: '/de/', code: 'de' },
+    ],
   },
 }
