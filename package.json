@@ -26,7 +26,7 @@
     "@magic/test": "0.0.12"
   },
   "dependencies": {
-    "@magic/core": "github:magic/core",
-    "@magic-modules/language-switch": "github:magic-modules/language-switch"
+    "@magic-modules/language-switch": "github:magic-modules/language-switch",
+    "@magic/core": "github:magic/core"
   }
 }
