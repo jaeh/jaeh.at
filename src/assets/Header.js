@@ -1,26 +1,13 @@
-const Header = props => state =>
+const Header = state =>
   div({ class: 'Header' }, [
-    div({ class: 'header__image' }, [
-      img({
-        alt: '',
-        class: 'face',
-        role: 'presentation',
-        src: '/img/jascha.ehrenreich.jpg',
-      }),
-      img({
-        alt: '',
-        class: 'body',
-        role: 'presentation',
-        src: '/img/jascha.ehrenreich.body.jpg',
-      }),
-    ]),
+    Header.Image,
 
-    div({ class: 'text' }, [
+    div({ class: 'HeaderText' }, [
       h2([Link({ to: '/' }, 'jascha ehrenreich')]),
 
-      props.job && h3(props.job),
+      state.job && h3(state.job),
 
-      props.description && div({ class: 'description' }, props.description.map(a => p(a))),
+      state.occupation && div(state.occupation.map(a => p(a))),
     ]),
   ])
 
@@ -34,7 +21,37 @@ Header.style = {
       margin: 0,
     },
   },
-  '.header__image': {
+
+  '@media screen and (min-width: 800px)': {
+    '.HeaderImage': {
+      float: 'left',
+      height: '29vw',
+      margin: '0 2em 3em 0',
+      width: '29vw',
+    },
+    '.HeaderText': {
+      float: 'left',
+    },
+  },
+}
+
+Header.Image = () => div({ class: 'HeaderImage' }, [
+  img({
+    alt: '',
+    class: 'Face',
+    role: 'presentation',
+    src: '/img/jascha.ehrenreich.jpg',
+  }),
+  img({
+    alt: '',
+    class: 'Body',
+    role: 'presentation',
+    src: '/img/jascha.ehrenreich.body.jpg',
+  }),
+])
+
+Header.Image.style = {
+  '.HeaderImage': {
     borderRadius: '10%',
     boxShadow: '0 0 2em black',
     display: 'block',
@@ -68,15 +85,6 @@ Header.style = {
           opacity: 1,
         },
       },
-    },
-  },
-
-  '@media screen and (min-width: 800px)': {
-    '.header__image': {
-      float: 'left',
-      height: '29vw',
-      margin: '0 2em 3em 0',
-      width: '29vw',
     },
   },
 }

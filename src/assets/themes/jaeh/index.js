@@ -100,7 +100,7 @@ const theme = vars => ({
     },
   },
 
-  '.footer': {
+  '.Footer': {
     clear: 'both',
     fontSize: '.7em',
     margin: '1em 0 0',
@@ -121,17 +121,10 @@ const theme = vars => ({
     body: {
       textAlign: 'left',
       fontSize: '18px',
+    },
 
-      '.header__image': {
-        float: 'left',
-        height: '29vw',
-        margin: '0 2em 3em 0',
-        width: '29vw',
-      },
-
-      '.footer': {
-        margin: '5em 0',
-      },
+    '.Footer': {
+      margin: '5em 0',
     },
   },
 })

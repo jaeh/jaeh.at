@@ -1,13 +1,14 @@
-module.exports = (state, actions) => [
-  Header({
-    job: 'technomancer',
-    description: [
-      'i juggle with code since sixteen,',
-      'with cones, balls and rings since twentysix,',
-      'and life juggles with me since around thirtysix years.',
-      'i enjoy all of it.',
-    ],
-  }),
+const state = {
+  job: 'technomancer',
+  occupation: [
+    'i juggle with code since sixteen,',
+    'with cones, balls and rings since twentysix,',
+    'and life juggles with me since around thirtysix years.',
+    'i enjoy all of it.',
+  ],
+}
+
+const View = (state, actions) => [
   LanguageSwitch({ to: '/de/', text: 'deutsch' }),
   div({ class: 'section communications' }, [
     h2('communications'),
@@ -162,3 +163,8 @@ module.exports = (state, actions) => [
     ]),
   ]),
 ]
+
+module.exports = {
+  state,
+  View,
+}
