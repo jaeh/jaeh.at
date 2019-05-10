@@ -18,9 +18,6 @@ module.exports = {
   },
   FOR_DEATH_CAN_NOT_HAVE_HIM: true,
 
-  SMTP: {
-    USER: process.env.SMTP_USER,
-    PASS: process.env.SMTP_PASS,
-    TO: 'contact@jaeh.at',
-  },
+  URL: 'jaeh.at',
+  WEB_ROOT: '/',
 }
