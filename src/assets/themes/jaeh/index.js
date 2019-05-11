@@ -124,7 +124,7 @@ const theme = vars => ({
     },
 
     '.Footer': {
-      margin: '5em 0',
+      margin: '5em 0 2em',
     },
   },
 })

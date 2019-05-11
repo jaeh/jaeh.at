@@ -55,6 +55,7 @@ module.exports = {
 
   '.Wrapper': {
     display: 'inline-block',
+    margin: '5vw 0 0',
   },
 
   // header and menu in header
