@@ -9,7 +9,7 @@ const state = {
 }
 
 const View = (state, actions) => [
-  LanguageSwitch({ to: '/de/', text: 'deutsch' }),
+  LanguageSwitch,
   div({ class: 'section communications' }, [
     h2('communications'),
     ul([
