@@ -41,7 +41,7 @@ const theme = vars => ({
   a: {
     color: vars.linkColorDark,
     textDecoration: 'none',
-    transition: 'color 500ms, box-shadow 500ms',
+    transition: 'box-shadow 500ms, color 500ms',
     boxShadow: `inset 0 -1px 0 0 ${vars.backgroundColor}, inset 0 -2px 0 0 ${vars.linkColorLight}`,
     textShadow: `1px 1px 0 ${vars.backgroundColor}, -1px 1px 0 ${vars.backgroundColor}, 2px 0 0 ${
       vars.backgroundColor
