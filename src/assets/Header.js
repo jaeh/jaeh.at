@@ -3,9 +3,9 @@ const Header = state =>
     Header.Image,
 
     div({ class: 'HeaderText' }, [
-      h2([Link({ to: '/' }, 'jascha ehrenreich')]),
+      h1([Link({ to: '/' }, 'jascha ehrenreich')]),
 
-      state.job && h3(state.job),
+      state.job && h2(state.job),
 
       state.occupation && div(state.occupation.map(a => p(a))),
     ]),
@@ -17,7 +17,7 @@ Header.style = {
     margin: '0 0 .5em',
     width: '100%',
 
-    'h2, h3': {
+    'h1, h2': {
       margin: 0,
     },
   },

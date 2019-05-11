@@ -28,8 +28,12 @@ const theme = vars => ({
     width: '100%',
   },
 
-  'h2, h3': {
+  'h1, h2, h3': {
     margin: '2em 0 0',
+  },
+
+  h1: {
+    fontSize: '1.3em',
   },
 
   h2: {
