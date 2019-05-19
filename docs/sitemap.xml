@@ -6,22 +6,22 @@
 >
 
 <url>
+  <loc>https://jaeh.at/</loc>
+  <lastmod>2019-05-19</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<url>
   <loc>https://jaeh.at/404/</loc>
-  <lastmod>2019-05-11</lastmod>
+  <lastmod>2019-05-19</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.5</priority>
 </url>
 
 <url>
   <loc>https://jaeh.at/de/</loc>
-  <lastmod>2019-05-11</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.5</priority>
-</url>
-
-<url>
-  <loc>https://jaeh.at/</loc>
-  <lastmod>2019-05-11</lastmod>
+  <lastmod>2019-05-19</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.5</priority>
 </url>
