@@ -47,7 +47,6 @@ export default {
     minHeight: '100vh',
   },
 
-
   '#Magic': {
     margin: '0 auto',
     width: '90%',

@@ -16,11 +16,7 @@ export const View = state => [
     ul([
       li([
         span('email: '),
-        Link({ href: 'mailto:jascha@jaeh.at' }, [
-          'jascha',
-          span({ class: 'at' }, '@'),
-          'jaeh.at',
-        ]),
+        Link({ href: 'mailto:jascha@jaeh.at' }, ['jascha', span({ class: 'at' }, '@'), 'jaeh.at']),
       ]),
       li([
         span('github: '),
