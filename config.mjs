@@ -1,6 +1,4 @@
-const path = require('path')
-
-module.exports = {
+export default {
   ROOT: 'src',
   THEME: 'jaeh',
   PUBLIC: 'docs',

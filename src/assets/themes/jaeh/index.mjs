@@ -1,4 +1,4 @@
-const theme = vars => ({
+export default vars => ({
   '::selection': {
     backgroundColor: vars.textColor,
     color: vars.backgroundColor,
@@ -132,5 +132,3 @@ const theme = vars => ({
     },
   },
 })
-
-module.exports = theme

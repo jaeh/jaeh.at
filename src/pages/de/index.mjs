@@ -1,21 +1,26 @@
-const state = {
-  job: 'technomancer',
+export const state = {
+  lang: 'de',
+  job: 'technomant',
   occupation: [
-    'i juggle with code since sixteen,',
-    'with cones, balls and rings since twentysix,',
-    'and life juggles with me since around thirtysix years.',
-    'i enjoy all of it.',
+    'ich jongliere mit code seit sechszehn,',
+    'mit keulen, bällen und ringen seit sechsundzwanzig',
+    'und das leben jongliert mit mir seit ungefähr sechsunddreissig jahren.',
+    'ich geniesse das alles.',
   ],
 }
 
-const View = (state, actions) => [
-  LanguageSwitch,
+export const View = state => [
+  LanguageSwitch(state),
   div({ class: 'section communications' }, [
-    h2('communications'),
+    h2('kommunikation'),
     ul([
       li([
         span('email: '),
-        Link({ href: 'mailto:jascha@jaeh.at' }, ['jascha', span({ class: 'at' }, '@'), 'jaeh.at']),
+        Link({ href: 'mailto:jascha@jaeh.at' }, [
+          'jascha',
+          span({ class: 'at' }, '@'),
+          'jaeh.at',
+        ]),
       ]),
       li([
         span('github: '),
@@ -55,7 +60,7 @@ const View = (state, actions) => [
   ]),
 
   div({ class: 'section congregations' }, [
-    h2('congregations'),
+    h2('kongregation'),
     ul([
       li([
         h3([
@@ -69,9 +74,9 @@ const View = (state, actions) => [
           ),
         ]),
         p(
-          'we are a tribe of makers, programmers, engineers, philosophers, activists, hackers, artists, clowns, and scientists.',
+          'wir sind ein stamm von erfindern, programmierern, philosophen, aktivisten, hackern, künstlern, clowns und wissenschafltern,',
         ),
-        p('we are wizards & witches @ work, magically shifting paradigms.'),
+        p('wir sind wizards & witches @ work, unsere magie transformiert paradigmen.'),
       ]),
       li([
         h3([
@@ -84,7 +89,7 @@ const View = (state, actions) => [
             'metalab',
           ),
         ]),
-        p('the metalab is a hack/make space in vienna, austria.'),
+        p('das metalab ist ein hack/make space in wien, österreich.'),
       ]),
       li([
         h3([
@@ -97,9 +102,9 @@ const View = (state, actions) => [
             'bitcoiners without borders',
           ),
         ]),
-        p('working in and on decentralized systems since 2012.'),
+        p('wir arbeiten seit 2012 an und in dezentralisierten systemen.'),
         p([
-          'managed the ',
+          'zb. verwaltung der ',
           Link(
             {
               href: 'https://bitcoinfoundation.org',
@@ -108,14 +113,14 @@ const View = (state, actions) => [
             },
             'bitcoinfoundation',
           ),
-          ' webproperties from 2012-2014.',
+          ' webproperties von 2012-2014.',
         ]),
       ]),
     ]),
   ]),
 
   div({ class: 'section occupations' }, [
-    h2('occupations'),
+    h2('projekte'),
     ul([
       li([
         h3([
@@ -128,9 +133,11 @@ const View = (state, actions) => [
             'magicshifter',
           ),
         ]),
-        p(
-          'open source hardware gadget for lighting, gaming, sound and persistence of vision applications.',
-        ),
+        p([
+          'open source hardware gadget für lichtmagie, spieltriebbefriedigung,',
+          ' und soundanwendungen.',
+          ' überlistet die persistente wahrnehmung.',
+        ]),
       ]),
       li([
         h3([
@@ -143,9 +150,7 @@ const View = (state, actions) => [
             'screeninvader',
           ),
         ]),
-        p(
-          'surf the web, watch videos or browse images the way you usually do, then show it on any screen and/or projector.',
-        ),
+        p('kollaboratives internetzsurfen, videoschaun oder bilder browsen.'),
       ]),
       li([
         h3([
@@ -158,13 +163,8 @@ const View = (state, actions) => [
             'magic',
           ),
         ]),
-        p('magic static/serverless page generator.'),
+        p('magische generation von statischen und serverlosen webseiten.'),
       ]),
     ]),
   ]),
 ]
-
-module.exports = {
-  state,
-  View,
-}

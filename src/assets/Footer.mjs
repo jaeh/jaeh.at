@@ -1,4 +1,4 @@
-const Footer = () =>
+export const View = () =>
   div({ class: 'Footer main' }, [
     span([
       a(
@@ -20,20 +20,22 @@ const Footer = () =>
     span([' made with a few bits of ', Link({ to: 'https://github.com/magic/core' }, 'magic')]),
   ])
 
-Footer.style = {
-  display: 'inline-block',
-  margin: '3em 0 1em',
+export const style = {
+  '.Footer': {
+    display: 'inline-block',
+    margin: '3em 0 1em',
 
-  span: {
-    display: 'block',
-    lineHeight: '1.3',
+    span: {
+      display: 'block',
+      lineHeight: '1.3',
+    },
   },
 
   '@media screen and (min-width: 500px)': {
-    span: {
-      display: 'inline',
+    '.Footer': {
+      span: {
+        display: 'inline',
+      },
     },
   },
 }
-
-module.exports = Footer

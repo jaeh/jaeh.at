@@ -15,7 +15,7 @@ const blocks = `.article,
 .footer,
 .section`
 
-module.exports = {
+export default {
   [tags]: {
     background: 'transparent',
     border: 0,

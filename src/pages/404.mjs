@@ -1,10 +1,10 @@
-const View = (state) => [
+export const View = (state) => [
   h3('404 - not found.'),
   p('unfortunately, there is nothing here but nothingness.'),
   p([Link({ to: '/' }, 'click here'), ' to get back to safety']),
 ]
 
-const state = {
+export const state = {
   title: '404 - not found',
   description: [
     'unfortunately, there is nothing here but nothingness.',
@@ -17,9 +17,4 @@ const state = {
     'and life juggles with me since around thirtysix years.',
     'i enjoy all of it.',
   ],
-}
-
-module.exports = {
-  state,
-  View,
 }

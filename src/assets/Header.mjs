@@ -1,6 +1,6 @@
-const Header = state =>
+export const Header = state =>
   div({ class: 'Header' }, [
-    Header.Image,
+    Header.Image(),
 
     div({ class: 'HeaderText' }, [
       h1([Link({ to: '/' }, 'jascha ehrenreich')]),
@@ -51,7 +51,6 @@ Header.Image = () => div({ class: 'HeaderImage' }, [
 ])
 
 Header.Image.style = {
-  '.HeaderImage': {
     borderRadius: '10%',
     boxShadow: '0 0 2em black',
     display: 'block',
@@ -86,7 +85,6 @@ Header.Image.style = {
         },
       },
     },
-  },
 }
 
-module.exports = Header
+export default Header
