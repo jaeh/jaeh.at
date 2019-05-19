@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/jaeh/jaeh.at#readme",
   "devDependencies": {
-    "@magic/test": "0.0.12"
+    "@magic/test": "0.1.5"
   },
   "dependencies": {
     "@magic-modules/language-switch": "github:magic-modules/language-switch",
