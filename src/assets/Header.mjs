@@ -1,13 +1,12 @@
-const Header = ({ state }) =>
+const Header = ({ job, occupation }) =>
   div({ class: 'Header' }, [
     Header.Image(),
 
     div({ class: 'HeaderText' }, [
       h1([Link({ to: '/' }, 'jascha ehrenreich')]),
 
-      state.job && h2(state.job),
-
-      state.occupation && div(state.occupation.map(a => p(a))),
+      job && h2(job),
+      occupation && div(occupation.map(a => p(a))),
     ]),
   ])
 
