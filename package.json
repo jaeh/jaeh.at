@@ -15,7 +15,12 @@
     "type": "git",
     "url": "git+https://github.com/jaeh/jaeh.at.git"
   },
-  "keywords": [],
+  "keywords": [
+    "magic",
+    "jascha",
+    "ehrenreich",
+    "jaeh"
+  ],
   "author": "Jascha Ehrenreich",
   "license": "AGPL-3.0",
   "bugs": {
@@ -23,7 +28,7 @@
   },
   "homepage": "https://github.com/jaeh/jaeh.at#readme",
   "devDependencies": {
-    "@magic/test": "0.1.5"
+    "@magic/test": "0.1.6"
   },
   "dependencies": {
     "@magic-modules/language-switch": "github:magic-modules/language-switch",
