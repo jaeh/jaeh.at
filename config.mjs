@@ -18,4 +18,6 @@ export default {
 
   URL: 'jaeh.at',
   WEB_ROOT: '/',
+
+  CNAME: 'jaeh.at',
 }
