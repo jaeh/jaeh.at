@@ -4,13 +4,12 @@ export const state = {
   occupation: [
     'ich jongliere mit code seit sechszehn,',
     'mit keulen, bällen und ringen seit sechsundzwanzig',
-    'und das leben jongliert mit mir seit ungefähr sechsunddreissig jahren.',
+    'und das leben mit mir seit etwa sechsunddreissig jahren.',
     'ich geniesse das alles.',
   ],
 }
 
 export const View = state => [
-  LanguageSwitch(state),
   div({ class: 'section communications' }, [
     h2('kommunikation'),
     ul([
@@ -23,8 +22,7 @@ export const View = state => [
         Link(
           {
             href: 'https://github.com/jaeh',
-            rel: 'nofollow noopener',
-            target: 'github-jaeh',
+            nofollow: true,
           },
           [span({ class: 'at' }, '@'), 'jaeh'],
         ),
@@ -35,19 +33,19 @@ export const View = state => [
         Link(
           {
             href: 'https://keybase.io/jascha',
-            rel: 'nofollow noopener',
-            target: 'keybase-jascha',
+            nofollow: true,
           },
           [span({ class: 'at' }, '@'), 'jascha'],
         ),
       ]),
+
       li([
         span('twitter: '),
         Link(
           {
             href: 'https://twitter.com/weirdpress',
-            rel: 'nofollow noopener',
-            target: 'twitter-weirdpress',
+            nofollow: true,
+            noreferrer: true,
           },
           [span({ class: 'at' }, '@'), 'weirdpress'],
         ),
@@ -63,8 +61,6 @@ export const View = state => [
           Link(
             {
               href: 'http://wizardsatwork.at',
-              rel: 'noopener',
-              target: 'wizardsatwork',
             },
             ['wizards', span({ class: 'add' }, '@'), 'work'],
           ),
@@ -79,8 +75,6 @@ export const View = state => [
           Link(
             {
               href: 'https://metalab.at',
-              rel: 'noopener',
-              target: 'metalab',
             },
             'metalab',
           ),
@@ -92,8 +86,6 @@ export const View = state => [
           Link(
             {
               href: 'https://bwb.is',
-              rel: 'noopener',
-              target: 'bwb',
             },
             'bitcoiners without borders',
           ),
@@ -104,8 +96,8 @@ export const View = state => [
           Link(
             {
               href: 'https://bitcoinfoundation.org',
-              rel: 'nofollow noindex noopener',
-              target: '_blank',
+              nofollow: true,
+              noreferrer: true,
             },
             'bitcoinfoundation',
           ),
@@ -116,15 +108,13 @@ export const View = state => [
   ]),
 
   div({ class: 'section occupations' }, [
-    h2('projekte'),
+    h2('okkupation'),
     ul([
       li([
         h3([
           Link(
             {
               href: 'http://magicshifter.net',
-              rel: 'noopener',
-              target: 'magicshifter',
             },
             'magicshifter',
           ),
@@ -140,8 +130,6 @@ export const View = state => [
           Link(
             {
               href: 'http://screeninvader.com/',
-              rel: 'noopener',
-              target: 'screeninvader',
             },
             'screeninvader',
           ),
@@ -153,8 +141,6 @@ export const View = state => [
           Link(
             {
               href: 'http://github.com/magic/core',
-              rel: 'nofollow noindex noopener',
-              target: 'magic',
             },
             'magic',
           ),
@@ -163,4 +149,6 @@ export const View = state => [
       ]),
     ]),
   ]),
+
+  LanguageSwitch(state),
 ]

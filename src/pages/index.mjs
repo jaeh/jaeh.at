@@ -9,7 +9,6 @@ export const state = {
 }
 
 export const View = state => [
-  LanguageSwitch(state),
   div({ class: 'section communications' }, [
     h2('communications'),
     ul([
@@ -87,24 +86,15 @@ export const View = state => [
         p('the metalab is a hack/make space in vienna, austria.'),
       ]),
       li([
-        h3([
-          Link(
-            {
-              href: 'https://bwb.is',
-              rel: 'noopener',
-              target: 'bwb',
-            },
-            'bitcoiners without borders',
-          ),
-        ]),
+        h3([Link({ href: 'https://bwb.is' }, 'bitcoiners without borders')]),
         p('working in and on decentralized systems since 2012.'),
         p([
           'managed the ',
           Link(
             {
               href: 'https://bitcoinfoundation.org',
-              rel: 'nofollow noindex noopener',
-              target: '_blank',
+              nofollow: true,
+              noreferrer: true,
             },
             'bitcoinfoundation',
           ),
@@ -122,8 +112,6 @@ export const View = state => [
           Link(
             {
               href: 'http://magicshifter.net',
-              rel: 'noopener',
-              target: 'magicshifter',
             },
             'magicshifter',
           ),
@@ -137,8 +125,6 @@ export const View = state => [
           Link(
             {
               href: 'http://screeninvader.com/',
-              rel: 'noopener',
-              target: 'screeninvader',
             },
             'screeninvader',
           ),
@@ -148,18 +134,11 @@ export const View = state => [
         ),
       ]),
       li([
-        h3([
-          Link(
-            {
-              href: 'http://github.com/magic/core',
-              rel: 'nofollow noindex noopener',
-              target: 'magic',
-            },
-            'magic',
-          ),
-        ]),
+        h3([Link({ href: 'http://github.com/magic/core' }, 'magic')]),
         p('magic static/serverless page generator.'),
       ]),
     ]),
   ]),
+
+  LanguageSwitch(state),
 ]
