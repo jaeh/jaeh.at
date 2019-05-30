@@ -6,7 +6,7 @@ export default vars => ({
   },
 
   '*': {
-    scrollbarColor: `${vars.linkColorLight} ${vars.backgroundColor}`,
+    scrollbarColor: `${vars.scrollbarColor} ${vars.backgroundColor}`,
     scrollbarWidth: 'thin',
   },
 
@@ -62,19 +62,6 @@ export default vars => ({
 
   ul: {
     listStyle: 'none',
-  },
-
-  '#main': {
-    margin: '8vw auto 0',
-    maxWidth: vars.maxWidth,
-    minHeight: '95vh',
-    width: '90%',
-  },
-
-  '.article': {
-    clear: 'both',
-    display: 'inline-block',
-    minHeight: '40vh',
   },
 
   '.section': {

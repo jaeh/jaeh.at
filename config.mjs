@@ -10,10 +10,12 @@ export default {
     backgroundColor: '#010101',
     linkColor: '#F57C00',
     linkColorLight: '#FB8C00',
-    linkColorDark: '#EF6C00',
+    linkColorDark: '#E76402',
     borderColor: '#F57C00',
     maxWidth: '1200px',
+    scrollbarColor: '#C55400',
   },
+
   FOR_DEATH_CAN_NOT_HAVE_HIM: true,
 
   URL: 'jaeh.at',
