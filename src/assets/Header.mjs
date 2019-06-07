@@ -1,5 +1,5 @@
 export const View = ({ job, occupation }) =>
-  div({ class: 'Header' }, [
+  header({ class: 'Header' }, [
     HeaderImage(),
 
     div({ class: 'HeaderText' }, [
@@ -11,14 +11,12 @@ export const View = ({ job, occupation }) =>
   ])
 
 export const style = {
-  '.Header': {
-    display: 'inline-block',
-    margin: '0 0 .5em',
-    width: '100%',
+  display: 'inline-block',
+  margin: '0 0 .5em',
+  width: '100%',
 
-    'h1, h2': {
-      margin: 0,
-    },
+  'h1, h2': {
+    margin: 0,
   },
 
   '@media screen and (min-width: 800px)': {

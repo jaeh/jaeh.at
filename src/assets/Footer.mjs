@@ -1,5 +1,5 @@
 export const View = () =>
-  div({ class: 'Footer main' }, [
+  footer({ class: 'Footer' }, [
     span([
       a(
         {
@@ -21,21 +21,17 @@ export const View = () =>
   ])
 
 export const style = {
-  '.Footer': {
-    display: 'inline-block',
-    margin: '3em 0 1em',
+  display: 'inline-block',
+  margin: '3em 0 1em',
 
-    span: {
-      display: 'block',
-      lineHeight: '1.3',
-    },
+  span: {
+    display: 'block',
+    lineHeight: '1.3',
   },
 
   '@media screen and (min-width: 500px)': {
-    '.Footer': {
-      span: {
-        display: 'inline',
-      },
+    span: {
+      display: 'inline',
     },
   },
 }
