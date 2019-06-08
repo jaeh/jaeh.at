@@ -1,4 +1,4 @@
-export const View = () =>
+export const View = state => [
   footer({ class: 'Footer' }, [
     span([
       a(
@@ -18,11 +18,26 @@ export const View = () =>
     ]),
 
     span([' made with a few bits of ', Link({ to: 'https://github.com/magic/core' }, 'magic')]),
-  ])
+  ]),
+  Gdpr(state),
+]
 
-export const style = {
+export const style = (vars = {}) => ({
+  clear: 'both',
   display: 'inline-block',
+  fontSize: '.7em',
   margin: '3em 0 1em',
+  textAlign: 'center',
+  width: '100%',
+
+  '.anarchy': {
+    boxShadow: 'none',
+    color: vars.textColor,
+    fontSize: '1.1em',
+    fontWeight: 800,
+    textDecoration: 'none',
+    textShadow: 'none',
+  },
 
   span: {
     display: 'block',
@@ -34,4 +49,4 @@ export const style = {
       display: 'inline',
     },
   },
-}
+})

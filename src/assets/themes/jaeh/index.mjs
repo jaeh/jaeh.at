@@ -47,16 +47,12 @@ export default vars => ({
     textDecoration: 'none',
     transition: 'box-shadow 500ms, color 500ms',
     boxShadow: `inset 0 -1px 0 0 ${vars.backgroundColor}, inset 0 -2px 0 0 ${vars.linkColorLight}`,
-    textShadow: `1px 1px 0 ${vars.backgroundColor}, -1px 1px 0 ${vars.backgroundColor}, 2px 0 0 ${
-      vars.backgroundColor
-    }, -2px 0 0 ${vars.backgroundColor}`,
+    textShadow: `1px 1px 0 ${vars.backgroundColor}, -1px 1px 0 ${vars.backgroundColor}, 2px 0 0 ${vars.backgroundColor}, -2px 0 0 ${vars.backgroundColor}`,
 
     '&:hover': {
       color: vars.linkColorLight,
       boxShadow: `inset 0 -1px 0 0 ${vars.backgroundColor}, inset 0 -2px 0 0 ${vars.linkColorDark}`,
-      textShadow: `1px 1px 0 ${vars.backgroundColor}, -1px 1px 0 ${vars.backgroundColor}, 2px 0 0 ${
-        vars.backgroundColor
-      }, -2px 0 0 ${vars.backgroundColor}`,
+      textShadow: `1px 1px 0 ${vars.backgroundColor}, -1px 1px 0 ${vars.backgroundColor}, 2px 0 0 ${vars.backgroundColor}, -2px 0 0 ${vars.backgroundColor}`,
     },
   },
 
@@ -91,20 +87,11 @@ export default vars => ({
     },
   },
 
-  '.Footer': {
-    clear: 'both',
-    fontSize: '.7em',
-    margin: '1em 0 0',
-    textAlign: 'center',
-    width: '100%',
-
-    '.anarchy': {
-      boxShadow: 'none',
-      color: vars.textColor,
-      fontSize: '1.1em',
-      fontWeight: 800,
-      textDecoration: 'none',
-      textShadow: 'none',
+  '.Gdpr': {
+    '.button': {
+      border: `1px solid ${vars.linkColorDark}`,
+      color: vars.linkColor,
+      backgroundColor: vars.backgroundColor,
     },
   },
 
