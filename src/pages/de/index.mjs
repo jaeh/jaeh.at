@@ -50,6 +50,19 @@ export const View = state => [
           [span({ class: 'at' }, '@'), 'weirdpress'],
         ),
       ]),
+
+      li([
+        span('mastodon: '),
+        Link(
+          {
+            href: 'https://anarchism.space/@jaeh',
+            rel: 'nofollow noopener',
+            target: 'mastodon-jaeh',
+            rel: 'me',
+          },
+          [span({ class: 'at' }, '@'), 'jaeh'],
+        ),
+      ]),
     ]),
   ]),
 
