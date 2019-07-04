@@ -9,7 +9,9 @@
     "prod": "NODE_ENV=production magic build serve",
     "dev": "magic dev",
     "publish": "magic publish",
-    "connect": "magic connect"
+    "connect": "magic connect",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,8 @@
   },
   "dependencies": {
     "@magic-modules/language-switch": "github:magic-modules/language-switch",
-    "@magic/core": "github:magic/core"
-  }
+    "@magic/core": "github:magic/core",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
