@@ -142,7 +142,7 @@ export const View = state => [
         h3([
           Link(
             {
-              href: 'http://screeninvader.com/',
+              href: 'https://github.com/screeninvader/',
             },
             'screeninvader',
           ),
