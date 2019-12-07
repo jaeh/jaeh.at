@@ -1,6 +1,7 @@
 {
   "name": "jaeh.at",
   "version": "0.23.5",
+  "private": true,
   "scripts": {
     "start": "t -p",
     "format": "f -w --exclude docs",
@@ -28,10 +29,10 @@
   },
   "homepage": "https://github.com/jaeh/jaeh.at#readme",
   "devDependencies": {
-    "@magic/test": "0.1.21"
+    "@magic/test": "0.1.23"
   },
   "dependencies": {
-    "@magic-modules/language-switch": "github:magic-modules/language-switch",
-    "@magic/core": "github:magic/core"
+    "@magic-modules/language-switch": "0.0.1",
+    "@magic/core": "0.0.1"
   }
 }
