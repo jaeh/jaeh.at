@@ -6,6 +6,9 @@ export const state = {
     'and life juggles with me since around thirtysix years.',
     'i enjoy all of it.',
   ],
+  gdpr: {
+    right: true,
+  },
 
   languages: [
     { text: 'english', to: '/', code: 'en' },
