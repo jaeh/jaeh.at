@@ -1,10 +1,10 @@
 {
   "css": "sha384-POYoPmQIeHNwyoxvaDbfVIgkGI2bn3E0tZaEGed3cpAc32rL+0mIPXprJieHbniX",
-  "js": "sha384-6mEFJnm342SsANwoHyZ34N24glsFjd9dFPCrGXutm/W4mRCa0BtpxFISEYsim3b1",
+  "js": "sha384-6ZJHqbSQuRlh2Wlc2U+ei4oCOvtRlT3rLHgmQvJxtpNyuqhK7NnU/pj54+wE5X60",
   "pages": {
-    "/": "sha384-Qn84srzQ1Mu2BJ0gKY7cCVXnM+8lQge7Vv1cubRdr4kgATC/v0HadoW26fpf9AK9",
-    "/404/": "sha384-PrO6V6ujlXUAJKsDL+9FBJzzNzMM29KAnjn7fD6Igc9JLx8jjufSpENDDs/XnCKS",
-    "/de/": "sha384-yDWmR1UuOG6pNDDAtvO67euGOZZpjewhn9B79SJopVItHQmpJAQLb6sQggnAx6Tr"
+    "/": "sha384-I4je4f+90qBaPzI0RgYBoVEw4wN2Mj8yNQar8EzzJhyqz+RJAKT40/B5gemRpyE1",
+    "/404/": "sha384-OrPLZ91FfyED4NQp83VCsTOvvaqA0tMoKW45Zt09nfrZo9ogFNAVdZmOwD3MvVo7",
+    "/de/": "sha384-l4FdvZASAF9IFOqMRqP89DM1ShgHeN1XyRFLGydRhOk/h7nGU6aveNgMCi0HLPcc"
   },
   "static": {
     "/CNAME": "sha384-7V/D5lgsomPh/rrCQXN5c0tHW4J5Ozi39iL4e1CvMElwosi9MyG7X5a6FSx1Ocxm",
@@ -13,6 +13,6 @@
     "/img/jascha.ehrenreich.jpg": "sha384-Oldr+l3hzby2pLNYm1eqMAFwwC+XWImvSHPWZGR9RwnYU5c8CCDGYPvIAHzwfDnD",
     "/keybase.txt": "sha384-BfD273C7coOVb/9zWtt0wFdkNPr3RbY9CRFwskXWIg+N2bco/pby4Mk/Xd+Af7cM",
     "/robots.txt": "sha384-GG8vkV//SeIO8t0zD/ZTOz6+ZnQoupEFkmiTXCpQeOB4pI5McARzWft/DiimMAaF",
-    "/sitemap.xml": "sha384-dwNn+hgIWmHvjhQLtrhXsVEo4jftA4F5akwTZtM/l5wcZhkdpjyFokhqwO9OCIHk"
+    "/sitemap.xml": "sha384-CH9wDSpEOKp9mEkkT4XllXu9nZJVFzuNvzuCR7OHRNMZap8zumYW9I9a8ye0RPs/"
   }
 }

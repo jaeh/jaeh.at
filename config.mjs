@@ -22,4 +22,6 @@ export default {
   WEB_ROOT: '/',
 
   CNAME: 'jaeh.at',
+
+  HOIST: 'Gdpr',
 }
