@@ -23,5 +23,5 @@ export default {
 
   CNAME: 'jaeh.at',
 
-  HOIST: 'Gdpr',
+  HOIST: ['Gdpr', 'LanguageSwitch'],
 }

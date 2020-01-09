@@ -152,6 +152,4 @@ export const View = state => [
       ]),
     ]),
   ]),
-
-  LanguageSwitch(state),
 ]
