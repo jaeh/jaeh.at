@@ -28,12 +28,13 @@
     "url": "https://github.com/jaeh/jaeh.at/issues"
   },
   "homepage": "https://github.com/jaeh/jaeh.at#readme",
-  "devDependencies": {
-    "@magic/test": "0.1.25"
-  },
   "dependencies": {
-    "@magic-modules/gdpr": "0.0.12",
+    "@magic-modules/gdpr": "0.0.13",
     "@magic-modules/language-switch": "0.0.1",
-    "@magic/core": "0.0.15"
+    "@magic/core": "0.0.19"
+  },
+  "devDependencies": {
+    "@magic/test": "0.1.29",
+    "@magic/format": "0.0.7"
   }
 }
