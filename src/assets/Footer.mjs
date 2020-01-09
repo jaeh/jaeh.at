@@ -19,7 +19,6 @@ export const View = state => [
 
     span([' made with a few bits of ', Link({ to: 'https://github.com/magic/core' }, 'magic')]),
   ]),
-  Gdpr(state),
 ]
 
 export const style = (vars = {}) => ({
