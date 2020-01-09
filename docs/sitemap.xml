@@ -26,4 +26,11 @@
   <priority>0.5</priority>
 </url>
 
+<url>
+  <loc>https://jaeh.at/de/404/</loc>
+  <lastmod>2020-01-09</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
+</url>
+
 </urlset>
