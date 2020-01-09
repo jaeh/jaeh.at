@@ -88,6 +88,15 @@ export default vars => ({
   },
 
   '.Gdpr': {
+    left: 'auto',
+    right: '0.5em',
+
+    '.ShowHide': {
+      height: '1.5em',
+      width: '1.5em',
+      left: 'auto',
+      right: '1em',
+    },
     '.button': {
       border: `1px solid ${vars.linkColorDark}`,
       color: vars.linkColor,
