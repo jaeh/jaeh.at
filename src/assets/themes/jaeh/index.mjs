@@ -1,24 +1,93 @@
+const tags = `html,
+h1, h2, h3,
+div, p, span,
+img,
+ul,
+li,
+.article,
+.section,
+.header,
+.footer,
+.main`
+
+const blocks = `.article,
+.header,
+.footer,
+.section`
+
 export default vars => ({
+  [tags]: {
+    background: 'transparent',
+    border: 0,
+    boxSizing: 'border-box',
+    fontWeight: 400,
+    margin: 0,
+    outline: 0,
+    padding: 0,
+    verticalAlign: 'baseline',
+  },
+
+  [blocks]: {
+    display: 'block',
+  },
+
+  '.Wrapper': {
+    display: 'block',
+    margin: '5vw 0 0',
+    margin: '0 auto',
+    width: '90%',
+  },
+
+  // header and menu in header
+  '.Header': {
+    display: 'inline-block',
+    width: '90%',
+
+    '.Logo': {
+      float: 'left',
+    },
+
+    '.LogoText': {
+      float: 'left',
+      fontSize: '1.5em',
+      margin: '.7em .2em',
+    },
+
+    '.LogoWrapper': {
+      display: 'inline-block',
+    },
+  },
+
+  '.Page': {
+    '.Header': {
+      margin: '0 0 .5em',
+    },
+
+    h1: {
+      padding: '1em 0 .2em',
+    },
+  },
+
   '::selection': {
-    backgroundColor: vars.textColor,
-    color: vars.backgroundColor,
+    backgroundColor: vars.text.dark,
+    color: vars.background.dark,
     textShadow: 'none',
   },
 
   '*': {
-    scrollbarColor: `${vars.scrollbarColor} ${vars.backgroundColor}`,
+    boxSizing: 'border-box',
+    scrollbarColor: `${vars.scrollbarColor} ${vars.background.dark}`,
     scrollbarWidth: 'thin',
   },
 
   body: {
-    backgroundColor: vars.backgroundColor,
     border: 0,
-    color: vars.textColor,
+    color: vars.text.dark,
     fontFamily:
       'Ubuntu, "Segoe UI", roboto, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif',
     fontSize: '15px',
     fontWeight: 400,
-    height: '100%',
+    height: '100vh',
     lineHeight: '1.6',
     margin: 0,
     overflowY: 'scroll',
@@ -28,8 +97,24 @@ export default vars => ({
     width: '100%',
   },
 
+  '#Magic': {
+    backgroundColor: vars.background.dark,
+    height: 'auto',
+    padding: '5vh 0 0',
+
+    '&.light': {
+      backgroundColor: vars.background.light,
+    },
+  },
+
+  // html header tags
+
   'h1, h2, h3': {
     margin: '2em 0 0',
+  },
+
+  'h4, h5': {
+    margin: '1em 0 .2em',
   },
 
   h1: {
@@ -39,20 +124,27 @@ export default vars => ({
   h2: {
     fontSize: '1.3em',
   },
+
   h3: {
     fontSize: '1.1em',
   },
+
   a: {
-    color: vars.linkColorDark,
+    background: 'transparent',
+    fontSize: '100%',
+    margin: 0,
+    padding: 0,
+    verticalAlign: 'baseline',
+    boxShadow: `inset 0 -1px 0 0 ${vars.background.dark}, inset 0 -2px 0 0 ${vars.linkColorLight}`,
+    color: vars.link.dark,
     textDecoration: 'none',
+    textShadow: `1px 1px 0 ${vars.background.dark}, -1px 1px 0 ${vars.background.dark}, 2px 0 0 ${vars.background.dark}, -2px 0 0 ${vars.background.dark}`,
     transition: 'box-shadow 500ms, color 500ms',
-    boxShadow: `inset 0 -1px 0 0 ${vars.backgroundColor}, inset 0 -2px 0 0 ${vars.linkColorLight}`,
-    textShadow: `1px 1px 0 ${vars.backgroundColor}, -1px 1px 0 ${vars.backgroundColor}, 2px 0 0 ${vars.backgroundColor}, -2px 0 0 ${vars.backgroundColor}`,
 
     '&:hover': {
-      color: vars.linkColorLight,
-      boxShadow: `inset 0 -1px 0 0 ${vars.backgroundColor}, inset 0 -2px 0 0 ${vars.linkColorDark}`,
-      textShadow: `1px 1px 0 ${vars.backgroundColor}, -1px 1px 0 ${vars.backgroundColor}, 2px 0 0 ${vars.backgroundColor}, -2px 0 0 ${vars.backgroundColor}`,
+      color: vars.link.light,
+      boxShadow: `inset 0 -1px 0 0 ${vars.background.dark}, inset 0 -2px 0 0 ${vars.link.dark}`,
+      textShadow: `1px 1px 0 ${vars.background.dark}, -1px 1px 0 ${vars.background.dark}, 2px 0 0 ${vars.background.dark}, -2px 0 0 ${vars.background.dark}`,
     },
   },
 
@@ -98,10 +190,16 @@ export default vars => ({
       right: '1em',
     },
     '.button': {
-      border: `1px solid ${vars.linkColorDark}`,
+      border: `1px solid ${vars.link.dark}`,
       color: vars.linkColor,
-      backgroundColor: vars.backgroundColor,
+      backgroundColor: vars.background.dark,
     },
+  },
+
+  '.Footer': {
+    fontSize: '1em',
+    margin: '5em 0 0',
+    width: '100%',
   },
 
   '@media screen and (min-width: 800px)': {
@@ -111,7 +209,7 @@ export default vars => ({
     },
 
     '.Footer': {
-      margin: '5em 0 2em',
+      margin: '5em 0 0',
     },
   },
 })
