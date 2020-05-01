@@ -10,7 +10,9 @@
     "prod": "NODE_ENV=production magic build serve",
     "dev": "magic dev",
     "publish": "magic publish",
-    "connect": "magic connect"
+    "connect": "magic connect",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -31,10 +33,12 @@
   "dependencies": {
     "@magic-modules/gdpr": "0.0.14",
     "@magic-modules/language-switch": "0.0.1",
-    "@magic/core": "0.0.27"
+    "@magic/core": "0.0.27",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@magic/test": "0.1.35",
     "@magic/format": "0.0.7"
-  }
+  },
+  "snyk": true
 }
