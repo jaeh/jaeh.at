@@ -31,10 +31,10 @@
   "dependencies": {
     "@magic-modules/gdpr": "0.0.15",
     "@magic-modules/language-switch": "0.0.1",
-    "@magic/core": "0.0.68"
+    "@magic/core": "0.0.70"
   },
   "devDependencies": {
-    "@magic/test": "0.1.42",
-    "@magic/format": "0.0.8"
+    "@magic/test": "0.1.45",
+    "@magic/format": "0.0.10"
   }
 }
