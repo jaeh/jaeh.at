@@ -1,11 +1,10 @@
-export const View = state => [
-  footer({ class: 'Footer' }, [
+export const View = (state, children) => [
+  div({ class: 'Credits' }, [
     span([
       a(
         {
           class: 'anarchy',
-          href: 'http://principiadiscordia.com',
-          rel: 'nofollow noopener',
+          href: 'https://principiadiscordia.com/book/1.php',
           target: 'allhaileris',
           title: 'Lick here, you might be one of the lucky 23.',
         },
@@ -16,8 +15,8 @@ export const View = state => [
       new Date().getFullYear(),
       ' - all rites reversed.',
     ]),
-
-    span([' made with a few bits of ', Link({ to: 'https://github.com/magic/core' }, 'magic')]),
+    ' made with a few bits of ',
+    Link({ to: 'https://github.com/magic/core', target: '_blank', rel: 'noopener' }, 'magic'),
   ]),
 ]
 
