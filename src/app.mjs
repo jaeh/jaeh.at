@@ -1,9 +1,9 @@
 export const state = {
   title: 'jaeh - jascha ehrenreich',
   description: [
-    'i juggle with code since sixteen,',
-    'with cones, balls and rings since twentysix,',
-    'and life juggles with me since around thirtysix years.',
+    'i juggle with code since eighteen,',
+    'with cones, balls and rings since twentyeight,',
+    'and life juggles with me since around thirtyeight years.',
     'i enjoy all of it.',
   ],
 
