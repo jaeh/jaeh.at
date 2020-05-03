@@ -31,7 +31,7 @@
   "dependencies": {
     "@magic-modules/gdpr": "0.0.15",
     "@magic-modules/language-switch": "0.0.1",
-    "@magic/core": "0.0.70"
+    "@magic/core": "0.0.71"
   },
   "devDependencies": {
     "@magic/test": "0.1.45",
