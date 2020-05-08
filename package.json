@@ -29,12 +29,12 @@
   },
   "homepage": "https://github.com/jaeh/jaeh.at#readme",
   "dependencies": {
-    "@magic-modules/gdpr": "0.0.15",
-    "@magic-modules/language-switch": "0.0.1",
-    "@magic/core": "0.0.71"
+    "@magic-modules/gdpr": "0.0.16",
+    "@magic-modules/language-switch": "0.0.2",
+    "@magic/core": "0.0.73"
   },
   "devDependencies": {
-    "@magic/test": "0.1.45",
-    "@magic/format": "0.0.10"
+    "@magic/test": "0.1.48",
+    "@magic/format": "0.0.11"
   }
 }
