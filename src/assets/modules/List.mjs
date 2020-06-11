@@ -1,5 +1,4 @@
 export const View = (items, children = []) =>
-  console.log(items, children) ||
   ul(
     { class: 'List' },
     (items && items.length ? items : children).map(i => [
