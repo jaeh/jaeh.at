@@ -28,53 +28,58 @@ export const View = state => [
 
   div({ class: 'section congregations' }, [
     h2('kongregation'),
-
-    ul([
-      li([
-        img({ width: 60, height: 60, src: '/img/congregations/bwb.png' }),
-        h3(Link({ text: 'bitcoiners without borders', to: 'https://bwb.is' })),
-        p([
+    List([
+      {
+        src: '/img/congregations/bwb.png',
+        title: 'bitcoiners without borders',
+        to: 'https://bwb.is',
+        text: [
           'eine ',
           Link({
             text: 'dezentrale autonome organisation',
             to: 'https://en.wikipedia.org/wiki/Decentralized_Autonomous_Organization',
           }),
-          ' gegründet 2011.',
-        ]),
-      ]),
-      li([
-        img({ width: 60, height: 60, src: '/img/congregations/metalab.png' }),
-        h3(Link({ text: 'metalab', to: 'https://metalab.at' })),
-        p('ein hack/make space in wien, österreich.'),
-      ]),
-      li([
-        img({ width: 60, height: 60, src: '/img/congregations/parallele.png' }),
+          ' gegründet 2011. wir arbeiten in und an dezentralen systemen.',
+        ],
+      },
+      {
+        src: '/img/congregations/metalab.png',
+        title: 'metalab',
+        to: 'https://metalab.at',
+        text: 'ein hack/make space in wien, österreich.',
+      },
+      {
+        src: '/img/congregations/parallele.png',
 
-        h3(Link({ text: 'parallele polis vienna', to: 'https://parallele.at' })),
-        p('weltweite cryptoliberationsbewegung, wiener sektion.'),
-      ]),
+        title: 'parallele polis vienna',
+        to: 'https://parallele.at',
+        text: 'weltweite cryptoliberationsbewegung, wiener sektion.',
+      },
     ]),
   ]),
 
   div({ class: 'section occupations' }, [
     h2('okkupation'),
 
-    ul([
-      li([
-        img({ width: 60, height: 60, src: '/img/occupations/webboot.png' }),
-        h3(Link({ text: '@webboot', to: 'http://webboot.org' })),
-        p('eine quelle von integrität für das netz.'),
-      ]),
-      li([
-        img({ width: 60, height: 60, src: '/img/occupations/magic.png' }),
-        h3(Link({ text: '@magic', to: 'http://github.com/magic/core' })),
-        p('jsomorphischer jamstack generator. javascript, apis und markup.'),
-      ]),
-      li([
-        img({ width: 60, height: 60, src: '/img/occupations/grundstein.png' }),
-        h3(Link({ text: '@grundstein', to: 'https://grundstein.it' })),
-        p('hosting ohne &auml;rger. liefert statische seiten und deren apis. gebaut fuer @magic.'),
-      ]),
+    List([
+      {
+        src: '/img/occupations/webboot.png',
+        title: '@webboot',
+        to: 'http://webboot.org',
+        text: 'eine quelle von integrität für das netz.',
+      },
+      {
+        src: '/img/occupations/magic.png',
+        title: '@magic',
+        to: 'http://github.com/magic/core',
+        text: 'jsomorphischer jamstack generator. javascript, apis und markup.',
+      },
+      {
+        src: '/img/occupations/grundstein.png',
+        title: '@grundstein',
+        to: 'https://grundstein.it',
+        text: 'hosting ohne ärger. liefert statische seiten und deren apis. gebaut fuer @magic.',
+      },
     ]),
   ]),
 ]
