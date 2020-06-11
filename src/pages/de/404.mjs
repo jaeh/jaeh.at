@@ -1,18 +1,20 @@
-export const View = state => [
-  h3(state.title),
-  p(state.description),
-  p([Link({ to: '/' }, 'Klicke hier'), ' um bekanntes Gebiet zu erreichen.']),
-]
-
 export const state = {
   lang: 'de',
   job: 'technomant',
   occupation: [
-    'ich jongliere mit code seit sechszehn,',
-    'mit keulen, bällen und ringen seit sechsundzwanzig',
-    'und das leben mit mir seit etwa sechsunddreissig jahren.',
+    'ich jongliere seit achtzehn mit code,',
+    'seit achtundzwanzig mit keulen, bällen und ringen',
+    'und seit etwa achtunddreissig jahren jongliert das leben mit mir.',
     'ich geniesse das alles.',
   ],
   title: '404 - nicht gefunden',
-  description: 'Hier ist leider nur Leere.',
+  description: 'hier ist leider nur Leere.',
 }
+
+export const View = state => [
+  h3(state.title),
+
+  p(state.description),
+
+  p(Link({ text: 'klicke hier', to: '/' })),
+]
