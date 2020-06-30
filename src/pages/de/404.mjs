@@ -1,14 +1,13 @@
 export const state = {
   lang: 'de',
   job: 'technomant',
-  occupation: [
-    'ich jongliere seit achtzehn mit code,',
-    'seit achtundzwanzig mit keulen, bällen und ringen',
-    'und seit etwa achtunddreissig jahren jongliert das leben mit mir.',
+  description: [
+    'ich jongliere mit code seit zwanzig,',
+    'mit keulen, bällen und ringen seit dreissig',
+    'und das leben mit mir seit etwa vierzig jahren.',
     'ich geniesse das alles.',
   ],
   title: '404 - nicht gefunden',
-  description: 'hier ist leider nur Leere.',
 }
 
 export const View = state => [

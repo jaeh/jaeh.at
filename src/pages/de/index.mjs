@@ -1,16 +1,16 @@
 export const state = {
   lang: 'de',
   job: 'technomant',
-  occupation: [
-    'ich jongliere mit code seit sechszehn,',
-    'mit keulen, bällen und ringen seit sechsundzwanzig',
-    'und das leben mit mir seit etwa sechsunddreissig jahren.',
+  description: [
+    'ich jongliere mit code seit zwanzig,',
+    'mit keulen, bällen und ringen seit dreissig',
+    'und das leben mit mir seit etwa vierzig jahren.',
     'ich geniesse das alles.',
   ],
 }
 
 export const View = state => [
-    ComList('kommunikation'),
+  ComList('kommunikation'),
 
   div({ class: 'section congregations' }, [
     h2('kongregation'),

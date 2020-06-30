@@ -1,14 +1,17 @@
-export const View = ({ job, occupation }) =>
-  header({ class: 'Header' }, [
+export const View = state => {
+  const { job, description } = state
+
+  return header({ class: 'Header' }, [
     HeaderImage(),
 
     div({ class: 'HeaderText' }, [
       h1([Link({ to: '/' }, 'jascha ehrenreich')]),
 
       job && h2(job),
-      occupation && div(occupation.map(a => p(a))),
+      description && div(description.map(a => p(a))),
     ]),
   ])
+}
 
 export const style = {
   display: 'inline-block',

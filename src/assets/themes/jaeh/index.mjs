@@ -151,7 +151,7 @@ export default (v = {}) => {
     },
 
     h2: {
-      fontSize: '1.3em',
+      fontSize: '1.1em',
     },
 
     h3: {
