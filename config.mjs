@@ -10,7 +10,7 @@ export default {
 
   CNAME: 'jaeh.at',
 
-  HOIST: ['Gdpr', 'LanguageSwitch'],
+  HOIST: ['NoSpy', 'LanguageSwitch'],
 
   IGNORED_STATIC: ['.xcf'],
 }
