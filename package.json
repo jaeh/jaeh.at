@@ -30,8 +30,8 @@
   "homepage": "https://github.com/jaeh/jaeh.at#readme",
   "dependencies": {
     "@magic-modules/language-switch": "0.0.2",
-    "@magic-modules/no-spy": "0.0.1",
-    "@magic/core": "0.0.85"
+    "@magic-modules/no-spy": "0.0.5",
+    "@magic/core": "0.0.87"
   },
   "devDependencies": {
     "@magic/test": "0.1.52",
