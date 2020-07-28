@@ -19,9 +19,10 @@ export const View = state => [
         title: 'bitcoiners without borders',
         to: 'https://bwb.is',
         text: [
-          'a ',
+          'is a ',
           Link({
-            text: 'decentralized autonomous organization',
+            text: 'DAO',
+            title: '(decentralized autonomous organization)',
             to: 'https://en.wikipedia.org/wiki/Decentralized_Autonomous_Organization',
           }),
           ' founded in 2011, working in and on decentralized systems.',

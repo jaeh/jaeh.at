@@ -22,10 +22,11 @@ export const View = state => [
         text: [
           'eine ',
           Link({
-            text: 'dezentrale autonome organisation',
+            text: 'DAO',
+            title: '(dezentrale autonome organisation)',
             to: 'https://en.wikipedia.org/wiki/Decentralized_Autonomous_Organization',
           }),
-          ' gegründet 2011. wir arbeiten in und an dezentralen systemen.',
+          ', gegründet 2011. wir arbeiten in und an dezentralen systemen.',
         ],
       },
       {
