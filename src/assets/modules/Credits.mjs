@@ -11,7 +11,7 @@ export const View = (state, children) => [
         'Ⓐ',
       ),
 
-      '1982 - ',
+      ' 1982 - ',
       new Date().getFullYear(),
       ' - all rites reversed.',
     ]),
