@@ -1,10 +1,13 @@
-export const View = (items, children = []) =>
+export const View = (items = [], children = []) =>
   ul(
     { class: 'List' },
-    (items && items.length ? items : children).map(({ src, title, to, text }) => [
+    [...items, ...children].map(({ src, title, to, text }) => [
       li([
         src && Img({ width: 60, height: 60, src }),
-        title && div([to && h4(Link({ to }, title)), text && p(text)]),
+        title && div([
+          h4([Link({ to }, title)]),
+          p(text),
+        ]),
       ]),
     ]),
   )
