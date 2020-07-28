@@ -114,7 +114,7 @@ export default (v = {}) => {
       color: v.text.dark,
       fontFamily:
         'Ubuntu, "Segoe UI", roboto, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif',
-      fontSize: '15px',
+      fontSize: '16px',
       fontWeight: 400,
       height: '100vh',
       lineHeight: '1.6',
@@ -182,7 +182,7 @@ export default (v = {}) => {
 
       '.congregations, .occupations &&': {
         li: {
-          margin: '2em 0',
+          margin: '0 0 2em',
         },
 
         h3: {
@@ -203,6 +203,10 @@ export default (v = {}) => {
       clear: 'both',
       margin: '2em 0 1em',
 
+      h2: {
+        margin: '2em 0 1em',
+      },
+
       h3: {
         margin: '.5em 0 .2em',
       },
@@ -215,14 +219,6 @@ export default (v = {}) => {
       },
       '&.page': {
         maxWidth: '100%',
-      },
-
-      '&.communications': {
-        margin: 0,
-
-        'h2, h3': {
-          margin: 0,
-        },
       },
     },
 
@@ -252,7 +248,7 @@ export default (v = {}) => {
     '@media screen and (min-width: 800px)': {
       body: {
         textAlign: 'left',
-        fontSize: '18px',
+        fontSize: '20px',
       },
 
       '.Footer': {
