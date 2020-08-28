@@ -31,10 +31,10 @@
   "dependencies": {
     "@magic-modules/language-switch": "0.0.2",
     "@magic-modules/no-spy": "0.0.5",
-    "@magic/core": "0.0.87"
+    "@magic/core": "0.0.88"
   },
   "devDependencies": {
-    "@magic/test": "0.1.52",
-    "@magic/format": "0.0.13"
+    "@magic/test": "0.1.53",
+    "@magic/format": "0.0.14"
   }
 }
