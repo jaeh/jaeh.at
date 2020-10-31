@@ -9,7 +9,7 @@ export const View = (title = 'communications') =>
       li(['twitter: ', Link({ to: 'https://twitter.com/weirdpress', text: '@weirdpress' })]),
       li([
         'facebook: ',
-        Link({ to: 'https://facebook.com/jascha.ehrenreich', text: '/jaschaehrenreich' }),
+        Link({ to: 'https://facebook.com/jascha.ehrenreich', text: 'jascha.ehrenreich' }),
       ]),
     ]),
   ])
