@@ -5,7 +5,7 @@ export const View = (items = [], children = []) =>
       li([
         src && Img({ width: 60, height: 60, src }),
         title && div([
-          h4([Link({ to }, title)]),
+          h3([Link({ to }, title)]),
           p(text),
         ]),
       ]),
@@ -15,7 +15,7 @@ export const View = (items = [], children = []) =>
 export const style = {
   width: '100%',
 
-  h4: {
+  h3: {
     margin: 0,
     padding: 0,
   },
