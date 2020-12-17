@@ -23,16 +23,16 @@ export const vars = {
     light: '#323232',
   },
   background: {
-    dark: '#010101',
+    dark: '#232323',
     light: '#e1e1e1',
   },
   link: {
-    dark: '#E76402',
-    light: '#FB8C00',
+    dark: '#F90',
+    light: '#E76402',
 
     hover: {
-      dark: '#FB8C00',
-      light: '#E76402',
+      dark: '#E76402',
+      light: '#F90',
     },
   },
 
@@ -111,9 +111,20 @@ export default (v = {}) => {
 
     body: {
       border: 0,
-      color: v.text.dark,
-      fontFamily:
-        'Ubuntu, "Segoe UI", roboto, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif',
+      fontFamily: `
+        -apple-system,
+        BlinkMacSystemFont,
+        avenir next,
+        avenir,
+        helvetica neue,
+        helvetica,
+        Ubuntu,
+        roboto,
+        noto,
+        segoe ui,
+        arial,
+        sans-serif
+      `.trim().replace(/\n/gim, ' ').replace(/\s{2,}/g, ' ',),
       fontSize: '16px',
       fontWeight: 400,
       height: '100vh',
@@ -122,17 +133,20 @@ export default (v = {}) => {
       overflowY: 'scroll',
       padding: 0,
       position: 'absolute',
-      verticalAlign: 'baseline',
       width: '100%',
     },
 
     '#Magic': {
       backgroundColor: v.background.dark,
+      color: v.text.dark,
       height: 'auto',
       padding: '5vh 0 0',
+      transition: 'background-color 500ms, color 500ms',
+
 
       '&.light': {
         backgroundColor: v.background.light,
+        color: v.text.light,
       },
     },
 
@@ -164,16 +178,26 @@ export default (v = {}) => {
       margin: 0,
       padding: 0,
       verticalAlign: 'baseline',
-      boxShadow: `inset 0 -1px 0 0 ${v.background.dark}, inset 0 -2px 0 0 ${v.linkColorLight}`,
       color: v.link.dark,
       textDecoration: 'none',
+      boxShadow: `inset 0 -1px 0 0 ${v.background.dark}, inset 0 -2px 0 0 ${v.link.light}`,
       textShadow: `1px 1px 0 ${v.background.dark}, -1px 1px 0 ${v.background.dark}, 2px 0 0 ${v.background.dark}, -2px 0 0 ${v.background.dark}`,
-      transition: 'box-shadow 500ms, color 500ms',
+      transition: 'box-shadow 500ms, color 500ms, text-shadow 500ms',
 
       '&:hover': {
         color: v.link.light,
         boxShadow: `inset 0 -1px 0 0 ${v.background.dark}, inset 0 -2px 0 0 ${v.link.dark}`,
-        textShadow: `1px 1px 0 ${v.background.dark}, -1px 1px 0 ${v.background.dark}, 2px 0 0 ${v.background.dark}, -2px 0 0 ${v.background.dark}`,
+      },
+
+      '.light &&': {
+        color: v.link.light,
+        boxShadow: `inset 0 -1px 0 0 ${v.background.light}, inset 0 -2px 0 0 ${v.link.light}`,
+        textShadow: `1px 1px 0 ${v.background.light}, -1px 1px 0 ${v.background.light}, 2px 0 0 ${v.background.light}, -2px 0 0 ${v.background.light}`,
+
+        '&:hover': {
+          color: v.link.dark,
+          boxShadow: `inset 0 -1px 0 0 ${v.background.light}, inset 0 -2px 0 0 ${v.link.dark}`,
+        }
       },
     },
 
@@ -222,9 +246,13 @@ export default (v = {}) => {
       },
     },
 
-    '.Gdpr': {
-      left: 'auto',
-      right: '0.5em',
+    '.NoSpy': {
+      '.icon': {
+        position: 'fixed',
+        left: 'auto',
+        right: '0.5em',
+        bottom: '0.5em',
+      },
 
       '.ShowHide': {
         height: '1.5em',
@@ -237,6 +265,11 @@ export default (v = {}) => {
         color: v.linkColor,
         backgroundColor: v.background.dark,
       },
+    },
+
+    '.LightSwitch': {
+      left: 'auto',
+      right: '0.5em',
     },
 
     '.Footer': {
