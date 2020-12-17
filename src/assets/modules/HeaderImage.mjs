@@ -16,7 +16,6 @@ export const View = () =>
 
 export const style = {
   borderRadius: '10%',
-  boxShadow: '0 0 2em black',
   display: 'block',
   height: '59vw',
   margin: '0 0 1.5em',
