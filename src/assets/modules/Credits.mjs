@@ -30,11 +30,15 @@ export const style = (vars = {}) => ({
 
   '.anarchy': {
     boxShadow: 'none',
-    color: vars.textColor,
-    fontSize: '1.1em',
+    color: vars.link.dark,
+    fontSize: '1.3em',
     fontWeight: 800,
     textDecoration: 'none',
     textShadow: 'none',
+
+    '.light &&': {
+      color: vars.link.light,
+    },
   },
 
   span: {
