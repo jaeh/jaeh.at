@@ -41,6 +41,12 @@ export const View = state => [
         to: 'https://parallele.at',
         text: 'cryptoliberation community, viennese fork.',
       },
+      {
+        src: '/img/congregations/thesystemcollective.png',
+        title: 'TheSystemCollective',
+        to: 'https://thesystem.at',
+        text: 'artist collective, building an artificial museum.',
+      },
     ]),
   ]),
 
@@ -57,13 +63,13 @@ export const View = state => [
         src: '/img/occupations/magic.png',
         title: 'magic',
         to: 'https://magic.github.io',
-        text: 'jsomorphic jamstack generator. javascript, apis and markup.',
+        text: 'jsomorphic jamstack generator.',
       },
       {
         src: '/img/occupations/grundstein.png',
         title: 'grundstein',
         to: 'https://grundstein.it',
-        text: 'hosting without hassle. serves static pages and their apis. built for magic.',
+        text: 'serves static pages and their apis. built for magic.',
       },
     ]),
   ]),
