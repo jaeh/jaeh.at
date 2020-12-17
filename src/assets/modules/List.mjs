@@ -4,10 +4,7 @@ export const View = (items = [], children = []) =>
     [...items, ...children].map(({ src, title, to, text }) => [
       li([
         src && Img({ width: 60, height: 60, src }),
-        title && div([
-          h3([Link({ to }, title)]),
-          p(text),
-        ]),
+        title && div([h3([Link({ to }, title)]), p(text)]),
       ]),
     ]),
   )

@@ -124,7 +124,10 @@ export default (v = {}) => {
         segoe ui,
         arial,
         sans-serif
-      `.trim().replace(/\n/gim, ' ').replace(/\s{2,}/g, ' ',),
+      `
+        .trim()
+        .replace(/\n/gim, ' ')
+        .replace(/\s{2,}/g, ' '),
       fontSize: '18px',
       fontWeight: 400,
       height: '100vh',
@@ -142,7 +145,6 @@ export default (v = {}) => {
       height: 'auto',
       padding: '5vh 0 0',
       transition: 'background-color 500ms, color 500ms',
-
 
       '&.light': {
         backgroundColor: v.background.light,
@@ -197,7 +199,7 @@ export default (v = {}) => {
         '&:hover': {
           color: v.link.dark,
           boxShadow: `inset 0 -1px 0 0 ${v.background.light}, inset 0 -2px 0 0 ${v.link.dark}`,
-        }
+        },
       },
     },
 
