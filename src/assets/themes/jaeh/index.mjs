@@ -125,7 +125,7 @@ export default (v = {}) => {
         arial,
         sans-serif
       `.trim().replace(/\n/gim, ' ').replace(/\s{2,}/g, ' ',),
-      fontSize: '16px',
+      fontSize: '18px',
       fontWeight: 400,
       height: '100vh',
       lineHeight: '1.6',
