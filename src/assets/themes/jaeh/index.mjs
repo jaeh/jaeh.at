@@ -24,7 +24,7 @@ export const vars = {
   },
   background: {
     dark: '#232323',
-    light: '#e1e1e1',
+    light: '#FEFEFE',
   },
   link: {
     dark: '#F90',
