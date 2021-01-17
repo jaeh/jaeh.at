@@ -15,6 +15,18 @@ export const View = state => [
     h2('congregations'),
     List([
       {
+        src: '/img/congregations/thesystemcollective.png',
+        title: 'TheSystemCollective',
+        to: 'https://thesystem.at',
+        text: 'artist collective, building an artificial museum.',
+      },
+      {
+        src: '/img/congregations/metalab.png',
+        title: 'metalab',
+        to: 'https://metalab.at',
+        text: 'a hack/make space in vienna, austria.',
+      },
+      {
         src: '/img/congregations/bwb.png',
         title: 'bitcoiners without borders',
         to: 'https://bwb.is',
@@ -28,24 +40,11 @@ export const View = state => [
           ' founded in 2011, working in and on decentralized systems.',
         ],
       },
-
-      {
-        src: '/img/congregations/metalab.png',
-        title: 'metalab',
-        to: 'https://metalab.at',
-        text: 'a hack/make space in vienna, austria.',
-      },
       {
         src: '/img/congregations/parallele.png',
         title: 'parallele polis vienna',
         to: 'https://parallele.at',
         text: 'cryptoliberation community, viennese fork.',
-      },
-      {
-        src: '/img/congregations/thesystemcollective.png',
-        title: 'TheSystemCollective',
-        to: 'https://thesystem.at',
-        text: 'artist collective, building an artificial museum.',
       },
     ]),
   ]),
