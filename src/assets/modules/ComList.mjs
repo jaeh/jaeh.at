@@ -7,9 +7,5 @@ export const View = (title = 'communications') =>
       li(['gitlab: ', Link({ to: 'https://gitlab.com/jaeh', text: '@jaeh' })]),
       li(['keybase: ', Link({ to: 'https://keybase.io/jascha', text: 'jascha' })]),
       li(['twitter: ', Link({ to: 'https://twitter.com/weirdpress', text: '@weirdpress' })]),
-      li([
-        'facebook: ',
-        Link({ to: 'https://facebook.com/jascha.ehrenreich', text: 'jascha.ehrenreich' }),
-      ]),
     ]),
   ])
