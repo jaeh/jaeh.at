@@ -56,12 +56,6 @@ export const View = state => [
         text: 'Unsere Aufgabe ist die Erschaffung, Beschaffung, Erforschung, Verbreitung und Bewahrung von (digitaler) Kunst.',
       },
       {
-        src: '/img/occupations/webboot.png',
-        title: '@webboot',
-        to: 'https://webboot.org',
-        text: 'eine quelle von integrität für das netz.',
-      },
-      {
         src: '/img/occupations/magic.png',
         title: '@magic',
         to: 'https://github.com/magic/core/',
@@ -72,6 +66,12 @@ export const View = state => [
         title: '@grundstein',
         to: 'https://grundstein.it',
         text: 'hosting ohne ärger. liefert statische seiten und deren apis. gebaut fuer @magic.',
+      },
+      {
+        src: '/img/occupations/webboot.png',
+        title: '@webboot',
+        to: 'https://webboot.org',
+        text: 'eine quelle von integrität für das netz.',
       },
     ]),
   ]),

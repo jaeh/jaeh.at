@@ -59,12 +59,6 @@ export const View = state => [
         text: 'Our mission is to create, procure, research, disseminate and conserve (digital) art.',
       },
       {
-        src: '/img/occupations/webboot.png',
-        title: 'webboot',
-        to: 'https://webboot.org',
-        text: 'a source of integrity for the web.',
-      },
-      {
         src: '/img/occupations/magic.png',
         title: 'magic',
         to: 'https://magic.github.io',
@@ -75,6 +69,12 @@ export const View = state => [
         title: 'grundstein',
         to: 'https://grundstein.it',
         text: 'serves static pages and their apis. built for magic.',
+      },
+      {
+        src: '/img/occupations/webboot.png',
+        title: 'webboot',
+        to: 'https://webboot.org',
+        text: 'a source of integrity for the web.',
       },
     ]),
   ]),
