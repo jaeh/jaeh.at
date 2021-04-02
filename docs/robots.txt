@@ -1,3 +1,3 @@
 user-agent: *
 allow: /
-sitemap: https://jaeh.at/sitemap.xml
+sitemap: https:/jaeh.at/sitemap.xml
