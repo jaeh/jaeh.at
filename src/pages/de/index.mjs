@@ -51,7 +51,7 @@ export const View = state => [
     List([
       {
         src: '/img/occupations/artificialmuseum.png',
-        title: 'artificial museum',
+        title: 'Artificial Museum',
         to: 'https://artificialmuseum.com',
         text: 'Unsere Aufgabe ist die Erschaffung, Beschaffung, Erforschung, Verbreitung und Bewahrung von (digitaler) Kunst.',
       },

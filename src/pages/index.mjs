@@ -54,7 +54,7 @@ export const View = state => [
     List([
       {
         src: '/img/occupations/artificialmuseum.png',
-        title: 'artificial museum',
+        title: 'Artificial Museum',
         to: 'https://artificialmuseum.com',
         text: 'Our mission is to create, procure, research, disseminate and conserve (digital) art.',
       },
