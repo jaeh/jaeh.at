@@ -32,10 +32,10 @@
     "@magic-modules/language-switch": "0.0.3",
     "@magic-modules/light-switch": "0.0.10",
     "@magic-modules/no-spy": "0.0.6",
-    "@magic/core": "0.0.102"
+    "@magic/core": "0.0.112"
   },
   "devDependencies": {
-    "@magic/test": "0.1.60",
-    "@magic/format": "0.0.21"
+    "@magic/format": "0.0.22",
+    "@magic/test": "0.1.65"
   }
 }
