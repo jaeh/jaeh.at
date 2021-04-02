@@ -43,7 +43,7 @@ export const View = state => [
       {
         src: '/img/congregations/parallele.png',
         title: 'parallele polis vienna',
-        to: 'https://parallele.at',
+        to: 'https://www.parallele.at',
         text: 'cryptoliberation community, viennese fork.',
       },
     ]),
@@ -52,6 +52,12 @@ export const View = state => [
   div({ class: 'section occupations' }, [
     h2('occupations'),
     List([
+      {
+        src: '/img/occupations/artificialmuseum.png',
+        title: 'artificial museum',
+        to: 'https://artificialmuseum.com',
+        text: 'Our mission is to create, procure, research, disseminate and conserve (digital) art.',
+      },
       {
         src: '/img/occupations/webboot.png',
         title: 'webboot',

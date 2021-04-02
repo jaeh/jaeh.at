@@ -39,7 +39,7 @@ export const View = state => [
         src: '/img/congregations/parallele.png',
 
         title: 'parallele polis vienna',
-        to: 'https://parallele.at',
+        to: 'https://www.parallele.at',
         text: 'weltweite cryptoliberationsbewegung, wiener sektion.',
       },
     ]),
@@ -50,15 +50,21 @@ export const View = state => [
 
     List([
       {
+        src: '/img/occupations/artificialmuseum.png',
+        title: 'artificial museum',
+        to: 'https://artificialmuseum.com',
+        text: 'Unsere Aufgabe ist die Erschaffung, Beschaffung, Erforschung, Verbreitung und Bewahrung von (digitaler) Kunst.',
+      },
+      {
         src: '/img/occupations/webboot.png',
         title: '@webboot',
-        to: 'http://webboot.org',
+        to: 'https://webboot.org',
         text: 'eine quelle von integrität für das netz.',
       },
       {
         src: '/img/occupations/magic.png',
         title: '@magic',
-        to: 'http://github.com/magic/core',
+        to: 'https://github.com/magic/core/',
         text: 'jsomorphischer jamstack generator. javascript, apis und markup.',
       },
       {
