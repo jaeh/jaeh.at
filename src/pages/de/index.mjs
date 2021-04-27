@@ -16,6 +16,18 @@ export const View = state => [
     h2('kongregation'),
     List([
       {
+        src: '/img/congregations/thesystemcollective.png',
+        title: 'TheSystemCollective',
+        to: 'https://thesystem.at',
+        text: 'Künstlerkollektiv',
+      },
+      {
+        src: '/img/congregations/metalab.png',
+        title: 'metalab',
+        to: 'https://metalab.at',
+        text: 'ein hack/make space in wien, österreich.',
+      },
+      {
         src: '/img/congregations/bwb.png',
         title: 'bitcoiners without borders',
         to: 'https://bwb.is',
@@ -28,12 +40,6 @@ export const View = state => [
           }),
           ', gegründet 2011. wir arbeiten in und an dezentralen systemen.',
         ],
-      },
-      {
-        src: '/img/congregations/metalab.png',
-        title: 'metalab',
-        to: 'https://metalab.at',
-        text: 'ein hack/make space in wien, österreich.',
       },
       {
         src: '/img/congregations/parallele.png',
