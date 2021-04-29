@@ -59,7 +59,8 @@ export const View = state => [
         src: '/img/occupations/artificialmuseum.png',
         title: 'Artificial Museum',
         to: 'https://artificialmuseum.com',
-        text: 'Unsere Aufgabe ist die Erschaffung, Beschaffung, Erforschung, Verbreitung und Bewahrung von (digitaler) Kunst.',
+        text:
+          'Unsere Aufgabe ist die Erschaffung, Beschaffung, Erforschung, Verbreitung und Bewahrung von (digitaler) Kunst.',
       },
       {
         src: '/img/occupations/magic.png',
