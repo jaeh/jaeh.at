@@ -16,14 +16,14 @@ const blocks = `.article,
 .section`
 
 export const vars = {
-  black: '#010101',
+  black: '#000',
   white: '#FEFEFE',
   text: {
-    dark: '#DEDEDE',
-    light: '#323232',
+    dark: '#FEFEFE',
+    light: '#000',
   },
   background: {
-    dark: '#232323',
+    dark: '#000',
     light: '#FEFEFE',
   },
   link: {
