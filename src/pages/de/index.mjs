@@ -1,6 +1,6 @@
 export const state = {
   lang: 'de',
-  job: 'technomant',
+  job: 'technomant und straßenkünstler',
   description: [
     'ich jongliere mit code seit zwanzig,',
     'mit keulen, bällen und ringen seit dreissig',

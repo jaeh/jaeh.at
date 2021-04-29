@@ -1,5 +1,5 @@
 export const state = {
-  job: 'technomancer',
+  job: 'technomancer and streetartist',
   description: [
     'i juggle with code since twenty,',
     'with cones, balls and rings since thirty,',
