@@ -78,7 +78,7 @@ export const View = state => [
         src: '/img/occupations/webboot.png',
         title: '@webboot',
         to: 'https://webboot.org',
-        text: 'eine quelle von integrität für das netz.',
+        text: 'eine quelle von integrität für das netz. unfertig. quelloffen. kontaktiere mich einfach, wenn du dran hacken willst.',
       },
     ]),
   ]),

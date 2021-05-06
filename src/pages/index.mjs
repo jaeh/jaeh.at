@@ -75,7 +75,7 @@ export const View = state => [
         src: '/img/occupations/webboot.png',
         title: 'webboot',
         to: 'https://webboot.org',
-        text: 'a source of integrity for the web.',
+        text: 'a source of integrity for the web. unfinished. open source. dormant. contributions and feedback very welcome.',
       },
     ]),
   ]),
