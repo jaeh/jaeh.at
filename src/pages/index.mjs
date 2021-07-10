@@ -56,8 +56,7 @@ export const View = state => [
         src: '/img/occupations/artificialmuseum.png',
         title: 'Artificial Museum',
         to: 'https://artificialmuseum.com',
-        text:
-          'Our mission is to create, procure, research, disseminate and conserve (digital) art.',
+        text: 'Our mission is to create, procure, research, disseminate and conserve (digital) art.',
       },
       {
         src: '/img/occupations/magic.png',
