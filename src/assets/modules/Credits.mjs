@@ -1,4 +1,4 @@
-export const View = (state, children) => [
+export const View = () => [
   div({ class: 'Credits' }, [
     span([
       a(
