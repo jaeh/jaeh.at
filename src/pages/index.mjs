@@ -67,7 +67,7 @@ export const View = state => [
       {
         src: '/img/occupations/grundstein.png',
         title: 'grundstein',
-        to: 'https://grundstein.it',
+        to: 'https://grundstein.github.io/',
         text: 'serves static pages and their apis. built for magic.',
       },
       {

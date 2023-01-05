@@ -70,7 +70,7 @@ export const View = state => [
       {
         src: '/img/occupations/grundstein.png',
         title: '@grundstein',
-        to: 'https://grundstein.it',
+        to: 'https://grundstein.github.io/',
         text: 'hosting ohne ärger. liefert statische seiten und deren apis. gebaut fuer @magic.',
       },
       {
