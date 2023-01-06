@@ -46,7 +46,7 @@ export const style = (vars = {}) => ({
     lineHeight: '1.3',
   },
 
-  '@media screen and (min-width: 500px)': {
+  [`@media screen and (min-width: ${vars.widths.tablet})`]: {
     span: {
       display: 'inline',
     },

@@ -22,7 +22,7 @@ export const style = {
     margin: 0,
   },
 
-  '@media screen and (min-width: 800px)': {
+  [`@media screen and (min-width: ${vars.widths.laptop})`]: {
     '.HeaderImage': {
       float: 'left',
       height: '29vw',

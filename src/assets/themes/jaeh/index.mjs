@@ -280,7 +280,7 @@ export default (v = {}) => {
       width: '100%',
     },
 
-    '@media screen and (min-width: 800px)': {
+    [`@media screen and (min-width: ${vars.widths.laptop})`]: {
       body: {
         textAlign: 'left',
         fontSize: '20px',
