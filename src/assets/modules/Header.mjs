@@ -13,7 +13,7 @@ export const View = state => {
   ])
 }
 
-export const style = {
+export const style = (vars = {}) => ({
   display: 'inline-block',
   margin: '0 0 .5em',
   width: '100%',
@@ -33,4 +33,4 @@ export const style = {
       float: 'left',
     },
   },
-}
+})
