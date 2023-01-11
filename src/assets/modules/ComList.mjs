@@ -8,5 +8,6 @@ export const View = (title = 'communications') =>
       li(['npm: ', Link({ to: 'https://www.npmjs.com/~jascha', text: 'jascha' })]),
       li(['keybase: ', Link({ to: 'https://keybase.io/jascha', text: 'jascha' })]),
       li(['twitter: ', Link({ to: 'https://twitter.com/weirdpress', text: 'weirdpress' })]),
+      li(['mastodon: ', Link({ to: 'https://chaos.social/@jaeh', text: '@jaeh@chaos.social' })]),
     ]),
   ])
