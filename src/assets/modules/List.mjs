@@ -1,9 +1,9 @@
 export const View = (items = [], children = []) =>
   ul(
     { class: 'List' },
-    [...items, ...children].map(({ name, title, to, text }) => [
+    [...items, ...children].map(({ name, width = 60, height = 60, title, to, text }) => [
       li([
-        name && div(Picture({ width: 60, height: 60, name, ext: 'png' })),
+        name && div(Picture({ width, height, name, ext: 'png' })),
         title && div([h3([Link({ to }, title)]), P(text)]),
       ]),
     ]),
