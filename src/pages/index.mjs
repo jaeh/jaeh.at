@@ -15,36 +15,36 @@ export const View = state => [
     h2('congregations'),
     List([
       {
-        src: '/img/congregations/thesystemcollective.png',
+        name: 'img/occupations/artificialmuseum',
         title: 'TheSystemCollective',
         to: 'https://thesystem.at',
-        text: 'artist collective, building an artificial museum.',
+        text: [
+          'artist collective, building the Artificial Museum.',
+          'our mission is to create, procure, research, disseminate and conserve (digital) art.',
+        ],
       },
       {
-        src: '/img/congregations/metalab.png',
+        name: 'img/congregations/metalab',
         title: 'metalab',
         to: 'https://metalab.at',
         text: 'a hack/make space in vienna, austria.',
       },
       {
-        src: '/img/congregations/bwb.png',
+        name: 'img/congregations/bwb',
         title: 'bitcoiners without borders',
         to: 'https://bwb.is',
         text: [
-          'is a ',
-          Link({
-            text: 'DAO',
-            title: '(decentralized autonomous organization)',
-            to: 'https://en.wikipedia.org/wiki/Decentralized_Autonomous_Organization',
-          }),
-          ' founded in 2011, working in and on decentralized systems.',
+          // deep array to make this text not expand into multiple p elements.
+          [
+            'is a ',
+            Link({
+              text: 'DAO',
+              title: '(decentralized autonomous organization)',
+              to: 'https://en.wikipedia.org/wiki/Decentralized_Autonomous_Organization',
+            }),
+            ' founded in 2011, working in and on decentralized systems.',
+          ],
         ],
-      },
-      {
-        src: '/img/congregations/parallele.png',
-        title: 'parallele polis vienna',
-        to: 'https://www.parallele.at',
-        text: 'cryptoliberation community, viennese fork.',
       },
     ]),
   ]),
@@ -53,25 +53,29 @@ export const View = state => [
     h2('occupations'),
     List([
       {
-        src: '/img/occupations/artificialmuseum.png',
+        name: 'img/occupations/artificialmuseum',
         title: 'Artificial Museum',
         to: 'https://artificialmuseum.com',
-        text: 'Our mission is to create, procure, research, disseminate and conserve (digital) art.',
+        text: ['web-based augmented reality museum in worldwide public space.'],
       },
       {
-        src: '/img/occupations/magic.png',
+        name: 'img/occupations/magic',
         title: 'magic',
         to: 'https://magic.github.io',
-        text: 'jsomorphic jamstack generator.',
+        text: ['jsomorphic jamstack generator, builds static html and css files.'],
       },
       {
-        src: '/img/occupations/grundstein.png',
+        name: 'img/occupations/grundstein',
         title: 'grundstein',
         to: 'https://grundstein.github.io/',
-        text: 'serves static pages and their apis. built for magic.',
+        text: [
+          'the services provided by grundstein allow hosting of static pages, apis, osc, websocket and streaming of video and audio files.',
+          'opinionated and purpose-built for magic, webboot and the Artificial Museum.',
+        ],
       },
       {
-        src: '/img/occupations/webboot.png',
+        name: 'img/occupations/webboot',
+        height: 47,
         title: 'webboot',
         to: 'https://webboot.org',
         text: 'a source of integrity for the web. unfinished. open source. dormant. contributions and feedback very welcome.',

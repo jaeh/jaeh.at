@@ -9,7 +9,7 @@ export const state = {
   ],
 }
 
-export const View = state => [
+export const View = () => [
   ComList('kommunikation'),
 
   div({ class: 'section congregations' }, [
@@ -17,9 +17,12 @@ export const View = state => [
     List([
       {
         src: '/img/congregations/thesystemcollective.png',
-        title: 'TheSystemCollective',
+        title: 'SystemKollektiv',
         to: 'https://thesystem.at',
-        text: 'Künstlerkollektiv',
+        text: [
+          'künstlerinnenkollektiv, wir errichten das Artificial Museum.',
+          'unsere aufgabe ist die erschaffung, beschaffung, erforschung, verbreitung und bewahrung von (digitaler) kunst.',
+        ],
       },
       {
         src: '/img/congregations/metalab.png',
@@ -32,21 +35,16 @@ export const View = state => [
         title: 'bitcoiners without borders',
         to: 'https://bwb.is',
         text: [
-          'eine ',
-          Link({
-            text: 'DAO',
-            title: '(dezentrale autonome organisation)',
-            to: 'https://en.wikipedia.org/wiki/Decentralized_Autonomous_Organization',
-          }),
-          ', gegründet 2011. wir arbeiten in und an dezentralen systemen.',
+          [
+            'eine ',
+            Link({
+              text: 'DAO',
+              title: '(dezentrale autonome organisation)',
+              to: 'https://en.wikipedia.org/wiki/Decentralized_Autonomous_Organization',
+            }),
+            ', gegründet 2011. wir arbeiten in und an dezentralen systemen.',
+          ],
         ],
-      },
-      {
-        src: '/img/congregations/parallele.png',
-
-        title: 'parallele polis vienna',
-        to: 'https://www.parallele.at',
-        text: 'weltweite cryptoliberationsbewegung, wiener sektion.',
       },
     ]),
   ]),
@@ -59,25 +57,37 @@ export const View = state => [
         src: '/img/occupations/artificialmuseum.png',
         title: 'Artificial Museum',
         to: 'https://artificialmuseum.com',
-        text: 'Unsere Aufgabe ist die Erschaffung, Beschaffung, Erforschung, Verbreitung und Bewahrung von (digitaler) Kunst.',
+        text: 'web-basiertes augmented reality museum im weltweiten öffentlichen raum.',
       },
       {
         src: '/img/occupations/magic.png',
         title: '@magic',
         to: 'https://github.com/magic/core/',
-        text: 'jsomorphischer jamstack generator. javascript, apis und markup.',
+        text: [
+          'jsomorphischer jamstack generator. javascript, apis und markup.',
+          'generiert statisches html und css, addiert eine kleine menge javascript (~10kb), welches reaktive webapplikationen ermöglicht.',
+        ],
       },
       {
         src: '/img/occupations/grundstein.png',
         title: '@grundstein',
         to: 'https://grundstein.github.io/',
-        text: 'hosting ohne ärger. liefert statische seiten und deren apis. gebaut fuer @magic.',
+        text: [
+          [
+            'server framework, erwartet ein debian / ubuntu basiertes linux',
+            ' bash und ssh auf dem server,',
+            ' alles andere wird via konfiguration deklariert',
+            ' und von grundstein automatisiert installiert und gestartet.',
+          ],
+          'die von grundstein bereitgestellten services erlauben das hosten von statischen seiten, apis, optional sind osc, websocket sowie streaming (video und audio) möglich.',
+          'grundstein ist spezialisiert auf die bedürfnisse von magic, webboot und dem Artificial Museum.',
+        ],
       },
       {
         src: '/img/occupations/webboot.png',
         title: '@webboot',
         to: 'https://webboot.org',
-        text: 'eine quelle von integrität für das netz. unfertig. quelloffen. kontaktiere mich einfach, wenn du dran hacken willst.',
+        text: 'eine quelle von integrität für das netz. unfertig. freie software. kontaktiere mich einfach, wenn du dran hacken willst.',
       },
     ]),
   ]),
