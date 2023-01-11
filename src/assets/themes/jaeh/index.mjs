@@ -39,12 +39,20 @@ export const vars = {
   borderColor: '#F57C00',
   maxWidth: '1200px',
   scrollbarColor: '#C55400',
+
+  widths: {
+    tablet: '500px',
+    laptop: '800px',
+  },
 }
 
 export default (v = {}) => {
   v = { ...vars, ...v }
 
   return {
+    '#Magic .icon': {
+      width: '1.3em',
+    },
     [tags]: {
       background: 'transparent',
       border: 0,
@@ -205,24 +213,6 @@ export default (v = {}) => {
 
     ul: {
       listStyle: 'none',
-
-      '.congregations, .occupations &&': {
-        li: {
-          margin: '0 0 2em',
-        },
-
-        h3: {
-          lineHeight: 1,
-          margin: '0 0 0.5em',
-        },
-
-        img: {
-          clear: 'left',
-          float: 'left',
-          margin: '0 1em 1em 0',
-          height: 'auto',
-        },
-      },
     },
 
     '.section': {
@@ -249,6 +239,14 @@ export default (v = {}) => {
     },
 
     '.NoSpy': {
+      left: 'auto',
+      right: '0.5em',
+
+      '.Container': {
+        left: 'auto',
+        right: '1.5em',
+      },
+
       '.icon': {
         position: 'fixed',
         left: 'auto',
