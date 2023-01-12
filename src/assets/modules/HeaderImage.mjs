@@ -41,7 +41,7 @@ export const style = {
         opacity: 0,
         position: 'absolute',
         top: 0,
-      }
+      },
     },
   },
 
@@ -56,7 +56,7 @@ export const style = {
         img: {
           opacity: 1,
         },
-      }
+      },
     },
-  }
+  },
 }
