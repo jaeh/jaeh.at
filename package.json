@@ -35,7 +35,7 @@
     "@magic-modules/no-spy": "0.0.8",
     "@magic-modules/p": "0.0.1",
     "@magic-modules/picture": "0.0.2",
-    "@magic/core": "0.0.146"
+    "@magic/core": "0.0.147"
   },
   "devDependencies": {
     "@magic/format": "0.0.49",
