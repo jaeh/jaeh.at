@@ -1,16 +1,18 @@
 export const View = () =>
   div({ class: 'HeaderImage' }, [
-    img({
+    Picture({
       alt: '',
       class: 'Face',
       role: 'presentation',
-      src: '/img/jascha.ehrenreich.jpg',
+      name: 'img/jascha.ehrenreich',
+      ext: 'jpg',
     }),
-    img({
+    Picture({
       alt: '',
       class: 'Body',
       role: 'presentation',
-      src: '/img/jascha.ehrenreich.body.jpg',
+      name: 'img/jascha.ehrenreich.body',
+      ext: 'jpg',
     }),
   ])
 
@@ -29,23 +31,32 @@ export const style = {
     height: '100%',
     transition: 'opacity .3s',
     width: '100%',
+  },
 
+  picture: {
     '&:nth-child(2)': {
-      left: 0,
-      opacity: 0,
-      position: 'absolute',
-      top: 0,
+      img: {
+        background: 'red',
+        left: 0,
+        opacity: 0,
+        position: 'absolute',
+        top: 0,
+      }
     },
   },
 
   '&:hover': {
-    img: {
+    picture: {
       '&:first-child': {
-        opacity: 0,
+        img: {
+          opacity: 0,
+        },
       },
       '&:nth-child(2)': {
-        opacity: 1,
-      },
+        img: {
+          opacity: 1,
+        },
+      }
     },
-  },
+  }
 }
