@@ -16,7 +16,7 @@ export const View = () => [
     h2('kongregation'),
     List([
       {
-        src: '/img/congregations/thesystemcollective.png',
+        name: 'img/congregations/thesystemcollective',
         title: 'SystemKollektiv',
         to: 'https://thesystem.at',
         text: [
@@ -25,13 +25,13 @@ export const View = () => [
         ],
       },
       {
-        src: '/img/congregations/metalab.png',
+        name: 'img/congregations/metalab',
         title: 'metalab',
         to: 'https://metalab.at',
         text: 'ein hack/make space in wien, österreich.',
       },
       {
-        src: '/img/congregations/bwb.png',
+        name: 'img/congregations/bwb',
         title: 'bitcoiners without borders',
         to: 'https://bwb.is',
         text: [
@@ -54,13 +54,13 @@ export const View = () => [
 
     List([
       {
-        src: '/img/occupations/artificialmuseum.png',
+        name: 'img/congregations/thesystemcollective',
         title: 'Artificial Museum',
         to: 'https://artificialmuseum.com',
         text: 'web-basiertes augmented reality museum im weltweiten öffentlichen raum.',
       },
       {
-        src: '/img/occupations/magic.png',
+        name: 'img/occupations/magic',
         title: '@magic',
         to: 'https://github.com/magic/core/',
         text: [
@@ -69,22 +69,16 @@ export const View = () => [
         ],
       },
       {
-        src: '/img/occupations/grundstein.png',
+        name: 'img/occupations/grundstein',
         title: '@grundstein',
         to: 'https://grundstein.github.io/',
         text: [
-          [
-            'server framework, erwartet ein debian / ubuntu basiertes linux',
-            ' bash und ssh auf dem server,',
-            ' alles andere wird via konfiguration deklariert',
-            ' und von grundstein automatisiert installiert und gestartet.',
-          ],
           'die von grundstein bereitgestellten services erlauben das hosten von statischen seiten, apis, optional sind osc, websocket sowie streaming (video und audio) möglich.',
           'grundstein ist spezialisiert auf die bedürfnisse von magic, webboot und dem Artificial Museum.',
         ],
       },
       {
-        src: '/img/occupations/webboot.png',
+        name: 'img/occupations/webboot',
         title: '@webboot',
         to: 'https://webboot.org',
         text: 'eine quelle von integrität für das netz. unfertig. freie software. kontaktiere mich einfach, wenn du dran hacken willst.',

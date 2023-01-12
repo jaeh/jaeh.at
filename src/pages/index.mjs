@@ -62,7 +62,7 @@ export const View = state => [
         name: 'img/occupations/magic',
         title: 'magic',
         to: 'https://magic.github.io',
-        text: ['jsomorphic jamstack generator, builds static html and css files.'],
+        text: ['jsomorphic jamstack generator, javascript, api and markup. batteries included.'],
       },
       {
         name: 'img/occupations/grundstein',
