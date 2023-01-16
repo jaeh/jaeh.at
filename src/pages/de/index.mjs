@@ -16,7 +16,7 @@ export const View = () => [
     h2('kongregation'),
     List([
       {
-        name: 'img/congregations/thesystemcollective',
+        name: 'img/occupations/systemkollektiv',
         title: 'SystemKollektiv',
         to: 'https://thesystem.at',
         text: [

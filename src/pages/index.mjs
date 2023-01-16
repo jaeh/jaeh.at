@@ -15,8 +15,8 @@ export const View = state => [
     h2('congregations'),
     List([
       {
-        name: 'img/occupations/artificialmuseum',
-        title: 'TheSystemCollective',
+        name: 'img/congregations/systemkollektiv',
+        title: 'SystemCollective',
         to: 'https://thesystem.at',
         text: [
           'artist collective, building the Artificial Museum.',
