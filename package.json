@@ -31,14 +31,14 @@
   "homepage": "https://github.com/jaeh/jaeh.at#readme",
   "dependencies": {
     "@magic-modules/language-switch": "0.0.6",
-    "@magic-modules/light-switch": "0.0.11",
-    "@magic-modules/no-spy": "0.0.8",
+    "@magic-modules/light-switch": "0.0.12",
+    "@magic-modules/no-spy": "0.0.9",
     "@magic-modules/p": "0.0.1",
     "@magic-modules/picture": "0.0.2",
-    "@magic/core": "0.0.147"
+    "@magic/core": "0.0.150"
   },
   "devDependencies": {
-    "@magic/format": "0.0.49",
-    "@magic/test": "0.2.14"
+    "@magic/format": "0.0.51",
+    "@magic/test": "0.2.17"
   }
 }
