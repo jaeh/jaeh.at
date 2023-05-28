@@ -242,6 +242,14 @@ export default (v = {}) => {
       left: 'auto',
       right: '0.5em',
 
+      h3: {
+        color: v.link.dark,
+
+        '.light &&': {
+          color: v.link.light,
+        },
+      },
+
       '.Container': {
         left: 'auto',
         right: '1.5em',
@@ -260,10 +268,17 @@ export default (v = {}) => {
         left: 'auto',
         right: '1em',
       },
-      '.button': {
+
+      'input[type="button"]': {
         border: `1px solid ${v.link.dark}`,
-        color: v.linkColor,
+        color: v.link.dark,
         backgroundColor: v.background.dark,
+
+        '.light &&': {
+          border: `1px solid ${v.link.light}`,
+          color: v.link.light,
+          backgroundColor: v.background.light,
+        },
       },
     },
 
