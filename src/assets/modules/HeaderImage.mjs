@@ -4,14 +4,14 @@ export const View = () =>
       alt: '',
       class: 'Face',
       role: 'presentation',
-      name: 'img/jascha.ehrenreich',
+      name: '/img/jascha.ehrenreich',
       ext: 'jpg',
     }),
     Picture({
       alt: '',
       class: 'Body',
       role: 'presentation',
-      name: 'img/jascha.ehrenreich.body',
+      name: '/img/jascha.ehrenreich.body',
       ext: 'jpg',
     }),
   ])
