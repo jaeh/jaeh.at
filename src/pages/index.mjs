@@ -15,7 +15,7 @@ export const View = state => [
     h2('congregations'),
     List([
       {
-        name: 'img/congregations/systemkollektiv',
+        name: '/img/congregations/systemkollektiv',
         title: 'SystemCollective',
         to: 'https://thesystem.at',
         text: [
@@ -24,15 +24,15 @@ export const View = state => [
         ],
       },
       {
-        name: 'img/congregations/metalab',
+        name: '/img/congregations/metalab',
         title: 'metalab',
         to: 'https://metalab.at',
         text: 'a hack/make space in vienna, austria.',
       },
       {
-        name: 'img/congregations/bwb',
+        name: '/img/congregations/bwb',
         title: 'bitcoiners without borders',
-        to: 'https://bwb.is',
+        // to: 'https://bwb.is',
         text: [
           // deep array to make this text not expand into multiple p elements.
           [
@@ -53,19 +53,19 @@ export const View = state => [
     h2('occupations'),
     List([
       {
-        name: 'img/occupations/artificialmuseum',
+        name: '/img/occupations/artificialmuseum',
         title: 'Artificial Museum',
         to: 'https://artificialmuseum.com',
         text: ['web-based augmented reality museum in worldwide public space.'],
       },
       {
-        name: 'img/occupations/magic',
+        name: '/img/occupations/magic',
         title: 'magic',
         to: 'https://magic.github.io',
         text: ['jsomorphic jamstack generator, javascript, api and markup. batteries included.'],
       },
       {
-        name: 'img/occupations/grundstein',
+        name: '/img/occupations/grundstein',
         title: 'grundstein',
         to: 'https://grundstein.github.io/',
         text: [
@@ -74,7 +74,7 @@ export const View = state => [
         ],
       },
       {
-        name: 'img/occupations/webboot',
+        name: '/img/occupations/webboot',
         height: 47,
         title: 'webboot',
         to: 'https://webboot.org',

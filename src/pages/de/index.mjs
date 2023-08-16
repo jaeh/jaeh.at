@@ -16,7 +16,7 @@ export const View = () => [
     h2('kongregation'),
     List([
       {
-        name: 'img/occupations/systemkollektiv',
+        name: '/img/congregations/systemkollektiv',
         title: 'SystemKollektiv',
         to: 'https://thesystem.at',
         text: [
@@ -25,15 +25,15 @@ export const View = () => [
         ],
       },
       {
-        name: 'img/congregations/metalab',
+        name: '/img/congregations/metalab',
         title: 'metalab',
         to: 'https://metalab.at',
         text: 'ein hack/make space in wien, österreich.',
       },
       {
-        name: 'img/congregations/bwb',
+        name: '/img/congregations/bwb',
         title: 'bitcoiners without borders',
-        to: 'https://bwb.is',
+        // to: 'https://bwb.is',
         text: [
           [
             'eine ',
@@ -54,13 +54,13 @@ export const View = () => [
 
     List([
       {
-        name: 'img/congregations/thesystemcollective',
+        name: '/img/occupations/artificialmuseum',
         title: 'Artificial Museum',
         to: 'https://artificialmuseum.com',
         text: 'web-basiertes augmented reality museum im weltweiten öffentlichen raum.',
       },
       {
-        name: 'img/occupations/magic',
+        name: '/img/occupations/magic',
         title: '@magic',
         to: 'https://github.com/magic/core/',
         text: [
@@ -69,7 +69,7 @@ export const View = () => [
         ],
       },
       {
-        name: 'img/occupations/grundstein',
+        name: '/img/occupations/grundstein',
         title: '@grundstein',
         to: 'https://grundstein.github.io/',
         text: [
@@ -78,7 +78,7 @@ export const View = () => [
         ],
       },
       {
-        name: 'img/occupations/webboot',
+        name: '/img/occupations/webboot',
         title: '@webboot',
         to: 'https://webboot.org',
         text: 'eine quelle von integrität für das netz. unfertig. freie software. kontaktiere mich einfach, wenn du dran hacken willst.',
