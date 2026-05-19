@@ -29,23 +29,23 @@ export const View = state => [
         to: 'https://metalab.at',
         text: 'a hack/make space in vienna, austria.',
       },
-      {
-        name: '/img/congregations/bwb',
-        title: 'bitcoiners without borders',
-        // to: 'https://bwb.is',
-        text: [
-          // deep array to make this text not expand into multiple p elements.
-          [
-            'is a ',
-            Link({
-              text: 'DAO',
-              title: '(decentralized autonomous organization)',
-              to: 'https://en.wikipedia.org/wiki/Decentralized_Autonomous_Organization',
-            }),
-            ' founded in 2011, working in and on decentralized systems.',
-          ],
-        ],
-      },
+      // {
+      //   name: '/img/congregations/bwb',
+      //   title: 'bitcoiners without borders',
+      //   // to: 'https://bwb.is',
+      //   text: [
+      //     // deep array to make this text not expand into multiple p elements.
+      //     [
+      //       'is a ',
+      //       Link({
+      //         text: 'DAO',
+      //         title: '(decentralized autonomous organization)',
+      //         to: 'https://en.wikipedia.org/wiki/Decentralized_Autonomous_Organization',
+      //       }),
+      //       ' founded in 2011, working in and on decentralized systems.',
+      //     ],
+      //   ],
+      // },
     ]),
   ]),
 
@@ -64,22 +64,22 @@ export const View = state => [
         to: 'https://magic.github.io',
         text: ['jsomorphic jamstack generator, javascript, api and markup. batteries included.'],
       },
-      {
-        name: '/img/occupations/grundstein',
-        title: 'grundstein',
-        to: 'https://grundstein.github.io/',
-        text: [
-          'the services provided by grundstein allow hosting of static pages, apis, osc, websocket and streaming of video and audio files.',
-          'opinionated and purpose-built for magic, webboot and the Artificial Museum.',
-        ],
-      },
-      {
-        name: '/img/occupations/webboot',
-        height: 47,
-        title: 'webboot',
-        to: 'https://webboot.org',
-        text: 'a source of integrity for the web. unfinished. open source. dormant. contributions and feedback very welcome.',
-      },
+      // {
+      //   name: '/img/occupations/grundstein',
+      //   title: 'grundstein',
+      //   to: 'https://grundstein.github.io/',
+      //   text: [
+      //     'the services provided by grundstein allow hosting of static pages, apis, osc, websocket and streaming of video and audio files.',
+      //     'opinionated and purpose-built for magic, webboot and the Artificial Museum.',
+      //   ],
+      // },
+      // {
+      //   name: '/img/occupations/webboot',
+      //   height: 47,
+      //   title: 'webboot',
+      //   to: 'https://webboot.org',
+      //   text: 'a source of integrity for the web. unfinished. open source. dormant. contributions and feedback very welcome.',
+      // },
     ]),
   ]),
 ]
