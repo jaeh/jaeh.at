@@ -35,13 +35,13 @@
     "@magic-modules/no-spy": "0.0.9",
     "@magic-modules/p": "0.0.1",
     "@magic-modules/picture": "0.0.2",
-    "@magic/core": "0.0.161"
+    "@magic/core": "0.0.162"
   },
   "devDependencies": {
     "@magic/format": "0.0.82",
     "@magic/test": "0.3.59"
   },
   "allowScripts": {
-    "@swc/core@1.15.47": true
+    "@swc/core@1.16.22": true
   }
 }
