@@ -70,7 +70,7 @@ export default (v = {}) => {
 
     '.Wrapper': {
       display: 'block',
-      margin: '5vw 0 0',
+      // margin: '5vw 0 0',
       margin: '0 auto',
       width: '90%',
     },

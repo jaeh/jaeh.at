@@ -1,6 +1,6 @@
 export const state = {
   title: '404 - not found',
-  description: 'unfortunately, there is nothing here but nothingness.',
+  // description: 'unfortunately, there is nothing here but nothingness.',
   job: 'technomancer',
   description: [
     'i juggle with code since eighteen,',

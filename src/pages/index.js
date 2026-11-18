@@ -8,7 +8,7 @@ export const state = {
   ],
 }
 
-export const View = state => [
+export const View = () => [
   ComList(),
 
   div({ class: 'section congregations' }, [

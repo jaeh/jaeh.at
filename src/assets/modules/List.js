@@ -17,7 +17,6 @@ export const style = vars => ({
   },
 
   h3: {
-    margin: 0,
     padding: 0,
     lineHeight: 1,
     margin: '0 0 0.5em',
